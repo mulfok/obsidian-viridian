@@ -1,0 +1,12 @@
+/* --- ASIDE STYLING --- */
+aside {
+  display: block;
+  float: right;
+  width: 50%;
+  border: 1px solid var(--background-modifier-border);
+  border-left-width: 5px;
+  padding: 10px 20px;
+  margin: 5px 0px 5px 10px;
+}
+
+/*# sourceMappingURL=aside.css.map */

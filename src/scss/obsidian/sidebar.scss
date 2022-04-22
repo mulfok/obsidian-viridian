@@ -1,0 +1,12 @@
+/* --- SIDEBAR --- */
+
+/* Sidebar Buttons */
+.side-dock-ribbon-action {
+    padding-top: var(--vsidebar-padding);
+    padding-bottom: var(--vsidebar-padding);
+}
+
+/* Navigation Header */
+.nav-header { padding: 13px 5px 2px; }
+.nav-buttons-container { justify-content: flex-start; }
+.nav-action-button { margin: 0px; padding: 0px var(--vsidebar-nav-padding); }

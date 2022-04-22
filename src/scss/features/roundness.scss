@@ -1,0 +1,31 @@
+/* --- ROUNDNESS --- */
+.markdown-rendered blockquote,
+img[src]:not(.banner-image),
+aside,
+button,
+.mod-empty {
+    border-radius: var(--vbradius-normal);
+}
+
+/* Rounded Tables
+
+NOTE: 
+    This is a really, REALLY weird bodge.
+You can't apply a border radius to a border
+that's been collapsed, so I got rid of the
+spacing and it seemed to work.
+
+    If you are much more experienced with
+CSS than myself, feel free to try and fix
+this thing up.
+*/
+
+table:not(.table-view-table) { /* Disabled for Dataview Tables right now. */
+    border-collapse: separate !important;
+    border-spacing: 0;
+
+    & tr:first-child th:first-child { border-top-left-radius: var(--vbradius-normal); } /* Top-Left Radius */
+    & tr:first-child th:last-child { border-top-right-radius: var(--vbradius-normal); } /* Top-Right Radius */
+    & tr:last-child td:first-child { border-bottom-left-radius: var(--vbradius-normal); } /* Bottom-Left Radius */
+    & tr:last-child td:last-child { border-bottom-right-radius: var(--vbradius-normal); } /* Bottom-Right Radius */
+}

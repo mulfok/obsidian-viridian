@@ -1,0 +1,90 @@
+:root {
+    /*
+    Remember to run `sass --watch scss:css` before any changes!
+    Note that "EM" means "Edit Mode".
+    */
+
+    /* --- OBSIDIAN VARIABLES --- */
+   
+
+    /* --- VIRIDIAN VARIABLES --- */
+    /* Fonts */
+    --vfont-body: "Karla";
+    --vfont-editor: "Karla";
+    --vfont-header: "DM Sans";
+    --vfont-monospace: "Input Mono Condensed";
+    --vfont-ui: "Manrope";
+    
+    --vfont-headerEM: "DM Sans";
+
+    /* Font Sizes */
+    --vfont-normal-size: 14px;
+    --vfont-small-size: 11px;
+
+    /* Typography */
+    --vline-height: 1.3em;
+
+    /* Colours */
+    --accent-r: 75;
+    --accent-g: 100;
+    --accent-b: 68;
+
+    --accent-hover-r: 64;
+    --accent-hover-g: 130;
+    --accent-hover-b: 109;
+
+    /* Headings */
+    --vh1-weight: 800;
+    --vh2-weight: 800;
+    --vh3-weight: 600;
+    --vh4-weight: 600;
+    --vh5-weight: 500;
+    --vh6-weight: 400;
+
+    --vh1-weightEM: 800;
+    --vh2-weightEM: 800;
+    --vh3-weightEM: 600;
+    --vh4-weightEM: 600;
+    --vh5-weightEM: 500;
+    --vh6-weightEM: 400;
+
+    --vh1-size: 2.00em;
+    --vh2-size: 1.80em;
+    --vh3-size: 1.60em;
+    --vh4-size: 1.40em;
+    --vh5-size: 1.20em;
+    --vh6-size: 1.00em;
+
+    --vh1-sizeEM: 2.00em;
+    --vh2-sizeEM: 1.80em;
+    --vh3-sizeEM: 1.60em;
+    --vh4-sizeEM: 1.40em;
+    --vh5-sizeEM: 1.20em;
+    --vh6-sizeEM: 1.00em;
+
+    --vh1-style: normal;
+    --vh2-style: normal;
+    --vh3-style: normal;
+    --vh4-style: normal;
+    --vh5-style: normal;
+    --vh6-style: normal;
+
+    --vh1-styleEM: normal;
+    --vh2-styleEM: normal;
+    --vh3-styleEM: normal;
+    --vh4-styleEM: normal;
+    --vh5-styleEM: normal;
+    --vh6-styleEM: normal;
+
+    /* Border Radii */
+    --vbwidth-normal: 2px;
+    --vbradius-normal: 8px;
+
+    /* User Interface */
+    --vsidebar-padding: 2px;
+    --vsidebar-nav-padding: 4px;
+    
+    --vheader-h-padding: 8px;
+
+    --vcallout-padding: 5px;
+}

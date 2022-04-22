@@ -1,0 +1,47 @@
+/* --- THEME LIGHT --- */
+.theme-light {
+    /* Accent Colours */
+    --text-accent: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); /* #4b6444 */
+    --text-accent-hover: rgb(var(--accent-hover-r), var(--accent-hover-g), var(--accent-hover-b)); /* #40826d */
+
+    --interactive-accent: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); /* #4b6444 */
+    --interactive-accent-hover: rgb(var(--accent-hover-r), var(--accent-hover-g), var(--accent-hover-b)); /* #40826d */
+
+    /* Text Colours */
+    --text-normal: #4a341c;
+    
+    --text-muted: ;
+    --text-muted-rgb: ;
+    --text-faint: ;
+    
+    --text-error: ;
+    --text-error-hover: ;
+
+    --text-highlight-bg: ;
+    --text-highlight-bg-active: ;
+
+    --text-selection: ;
+    
+    --text-on-accent: ;
+
+    /* Interface Colours */
+
+    --background-primary: ;
+    --background-primary-alt: ;
+
+    --background-secondary: ;
+    --background-secondary-alt: ;
+
+    --background-modifier-border: ;
+
+    --background-modifier-form-field: ;
+    --background-modifier-form-field-highlighted: ;
+
+    --background-modifier-success: ;
+
+    --background-modifier-error: ;
+    --background-modifier-error-rgb: ;
+    --background-modifier-error-hover: ;
+
+    --background-modifier-cover: ;
+}

@@ -1,0 +1,52 @@
+/* --- FONTS --- */
+
+/* User Interface */
+body, input, button, .nav-folder-title, .nav-file-title { font-family: var(--vfont-ui); }
+
+/* Main Body - Reading Mode */
+.markdown-preview-view,
+.popover,
+.vertical-tab-content-container,
+.workspace-leaf-content[data-type=markdown] {
+    font-family: var(--vfont-body);
+}
+
+/* Main Body - Edit Mode */
+.markdown-source-view {
+    font-family: var(--vfont-editor);
+}
+
+/* Headers - Reading Mode */
+h1, h2, h3, h4, h5, h6 { font-family: var(--vfont-header); }
+
+h1 { font-weight: var(--vh1-weight); font-size: var(--vh1-size); font-style: var(--vh1-style); }
+h2 { font-weight: var(--vh2-weight); font-size: var(--vh2-size); font-style: var(--vh2-style); }
+h3 { font-weight: var(--vh3-weight); font-size: var(--vh3-size); font-style: var(--vh3-style); }
+h4 { font-weight: var(--vh4-weight); font-size: var(--vh4-size); font-style: var(--vh4-style); }
+h5 { font-weight: var(--vh5-weight); font-size: var(--vh5-size); font-style: var(--vh5-style); }
+h6 { font-weight: var(--vh6-weight); font-size: var(--vh6-size); font-style: var(--vh6-style); }
+
+/* Headers - Edit Mode */
+.HyperMD-header-1,.HyperMD-header-2,
+.HyperMD-header-3,.HyperMD-header-4,
+.HyperMD-header-5,.HyperMD-header-6 {
+    font-family: var(--vfont-headerEM);
+}
+
+.HyperMD-list-line {
+    & .cm-header-1,
+    & .cm-header-2,
+    & .cm-header-3,
+    & .cm-header-4,
+    & .cm-header-5,
+    & .cm-header-6 {
+        font-family: var(--vfont-headerEM);
+    }
+}
+
+.HyperMD-header-1, .HyperMD-list-line .cm-header-1 { font-weight: var(--vh1-weightEM); font-size: var(--vh1-sizeEM); font-style: var(--vh1-styleEM); }
+.HyperMD-header-2, .HyperMD-list-line .cm-header-2 { font-weight: var(--vh2-weightEM); font-size: var(--vh2-sizeEM); font-style: var(--vh2-styleEM); }
+.HyperMD-header-3, .HyperMD-list-line .cm-header-3 { font-weight: var(--vh3-weightEM); font-size: var(--vh3-sizeEM); font-style: var(--vh3-styleEM); }
+.HyperMD-header-4, .HyperMD-list-line .cm-header-4 { font-weight: var(--vh4-weightEM); font-size: var(--vh4-sizeEM); font-style: var(--vh4-styleEM); }
+.HyperMD-header-5, .HyperMD-list-line .cm-header-5 { font-weight: var(--vh5-weightEM); font-size: var(--vh5-sizeEM); font-style: var(--vh5-styleEM); }
+.HyperMD-header-6, .HyperMD-list-line .cm-header-6 { font-weight: var(--vh6-weightEM); font-size: var(--vh6-sizeEM); font-style: var(--vh6-styleEM); }

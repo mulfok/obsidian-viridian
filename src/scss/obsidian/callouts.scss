@@ -1,0 +1,23 @@
+/* --- CALLOUTS --- */
+.callout,
+.is-collapsed .callout-title {
+    border: 0px; border-radius: var(--vbradius-normal);
+}
+
+.callout-title {
+    border-top-left-radius: var(--vbradius-normal);
+    border-top-right-radius: var(--vbradius-normal);
+
+    padding: var(--vcallout-padding) 10px;
+}
+
+.callout-content {
+    border-bottom-left-radius: var(--vbradius-normal);
+    border-bottom-right-radius: var(--vbradius-normal);
+}
+
+.callout-fold svg,
+.callout-icon svg {
+    height: var(--vfont-normal-size);
+    width: var(--vfont-normal-size);
+}

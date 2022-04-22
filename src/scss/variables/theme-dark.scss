@@ -1,0 +1,7 @@
+/* --- THEME DARK --- */
+.theme-dark {
+    --text-accent: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); /* #4b6444 */
+    --interactive-accent: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); /* #4b6444 */
+    --text-accent-hover: rgb(var(--accent-hover-r), var(--accent-hover-g), var(--accent-hover-b)); /* #40826d */
+    --interactive-accent-hover: rgb(var(--accent-hover-r), var(--accent-hover-g), var(--accent-hover-b)); /* #40826d */
+}

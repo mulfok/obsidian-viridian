@@ -1,0 +1,24 @@
+/* --- TABLES --- */
+/* Normal Tables */
+th {
+  background-color: var(--background-secondary);
+}
+
+/* Dataview Tables */
+.table-view-table {
+  border: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-th {
+  font-size: var(--vfont-normal-size);
+  border-width: 0px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-right: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-tbody tr {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-tbody td {
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+/*# sourceMappingURL=tables.css.map */

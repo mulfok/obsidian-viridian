@@ -1,0 +1,9 @@
+/* --- TITLEBAR --- */
+/* Buttons - Minimise, Maximise, Close */
+.theme-dark, .theme-light {
+    & .titlebar-button {
+        &.mod-minimize:hover { background-color: var(--text-accent); }
+        &.mod-maximize:hover { background-color: var(--text-accent); }
+        &.mod-close:hover { background-color: var(--text-accent); }
+    }
+}
