@@ -1,52 +1,61 @@
 /* --- FONTS --- */
 
 /* User Interface */
-body, input, button, .nav-folder-title, .nav-file-title { font-family: var(--vfont-ui); }
+body,
+input,
+button,
+.nav-folder-title,
+.nav-file-title,
+.view-header-title,
+.mod-settings .vertical-tab-content-container {
+    font-family: var(--vr-font-ui);
+}
 
 /* Main Body - Reading Mode */
 .markdown-preview-view,
 .popover,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type=markdown] {
-    font-family: var(--vfont-body);
+    font-family: var(--vr-font-body);
 }
 
 /* Main Body - Edit Mode */
-.markdown-source-view {
-    font-family: var(--vfont-editor);
+.markdown-source-view .cm-line {
+    font-family: var(--vr-font-editor);
 }
 
 /* Headers - Reading Mode */
-h1, h2, h3, h4, h5, h6 { font-family: var(--vfont-header); }
+.el-h1 h1, .el-h2 h2, .el-h3 h3, .el-h4 h4, .el-h5 h5, .el-h6 h6 { font-family: var(--vr-font-header); }
 
-h1 { font-weight: var(--vh1-weight); font-size: var(--vh1-size); font-style: var(--vh1-style); }
-h2 { font-weight: var(--vh2-weight); font-size: var(--vh2-size); font-style: var(--vh2-style); }
-h3 { font-weight: var(--vh3-weight); font-size: var(--vh3-size); font-style: var(--vh3-style); }
-h4 { font-weight: var(--vh4-weight); font-size: var(--vh4-size); font-style: var(--vh4-style); }
-h5 { font-weight: var(--vh5-weight); font-size: var(--vh5-size); font-style: var(--vh5-style); }
-h6 { font-weight: var(--vh6-weight); font-size: var(--vh6-size); font-style: var(--vh6-style); }
+.el-h1 h1 { font-weight: var(--vr-h1-weight); font-size: var(--vr-h1-size); font-style: var(--vr-h1-style); }
+.el-h2 h2 { font-weight: var(--vr-h2-weight); font-size: var(--vr-h2-size); font-style: var(--vr-h2-style); }
+.el-h3 h3 { font-weight: var(--vr-h3-weight); font-size: var(--vr-h3-size); font-style: var(--vr-h3-style); }
+.el-h4 h4 { font-weight: var(--vr-h4-weight); font-size: var(--vr-h4-size); font-style: var(--vr-h4-style); }
+.el-h5 h5 { font-weight: var(--vr-h5-weight); font-size: var(--vr-h5-size); font-style: var(--vr-h5-style); }
+.el-h6 h6 { font-weight: var(--vr-h6-weight); font-size: var(--vr-h6-size); font-style: var(--vr-h6-style); }
 
 /* Headers - Edit Mode */
-.HyperMD-header-1,.HyperMD-header-2,
-.HyperMD-header-3,.HyperMD-header-4,
-.HyperMD-header-5,.HyperMD-header-6 {
-    font-family: var(--vfont-headerEM);
-}
+.HyperMD-header {
+    &.HyperMD-header-1 { font-weight: var(--vr-h1-weightEM); font-size: var(--vr-h1-sizeEM); font-style: var(--vr-h1-styleEM); }
+    &.HyperMD-header-2 { font-weight: var(--vr-h2-weightEM); font-size: var(--vr-h2-sizeEM); font-style: var(--vr-h2-styleEM); }
+    &.HyperMD-header-3 { font-weight: var(--vr-h3-weightEM); font-size: var(--vr-h3-sizeEM); font-style: var(--vr-h3-styleEM); }
+    &.HyperMD-header-4 { font-weight: var(--vr-h4-weightEM); font-size: var(--vr-h4-sizeEM); font-style: var(--vr-h4-styleEM); }
+    &.HyperMD-header-5 { font-weight: var(--vr-h5-weightEM); font-size: var(--vr-h5-sizeEM); font-style: var(--vr-h5-styleEM); }
+    &.HyperMD-header-6 { font-weight: var(--vr-h6-weightEM); font-size: var(--vr-h6-sizeEM); font-style: var(--vr-h6-styleEM); }
 
-.HyperMD-list-line {
-    & .cm-header-1,
-    & .cm-header-2,
-    & .cm-header-3,
-    & .cm-header-4,
-    & .cm-header-5,
-    & .cm-header-6 {
-        font-family: var(--vfont-headerEM);
+    & .cm-header {
+        font-family: var(--vr-font-headerEM);
+        color: var(--text-normal);
     }
 }
 
-.HyperMD-header-1, .HyperMD-list-line .cm-header-1 { font-weight: var(--vh1-weightEM); font-size: var(--vh1-sizeEM); font-style: var(--vh1-styleEM); }
-.HyperMD-header-2, .HyperMD-list-line .cm-header-2 { font-weight: var(--vh2-weightEM); font-size: var(--vh2-sizeEM); font-style: var(--vh2-styleEM); }
-.HyperMD-header-3, .HyperMD-list-line .cm-header-3 { font-weight: var(--vh3-weightEM); font-size: var(--vh3-sizeEM); font-style: var(--vh3-styleEM); }
-.HyperMD-header-4, .HyperMD-list-line .cm-header-4 { font-weight: var(--vh4-weightEM); font-size: var(--vh4-sizeEM); font-style: var(--vh4-styleEM); }
-.HyperMD-header-5, .HyperMD-list-line .cm-header-5 { font-weight: var(--vh5-weightEM); font-size: var(--vh5-sizeEM); font-style: var(--vh5-styleEM); }
-.HyperMD-header-6, .HyperMD-list-line .cm-header-6 { font-weight: var(--vh6-weightEM); font-size: var(--vh6-sizeEM); font-style: var(--vh6-styleEM); }
+/* Monospace Fonts */
+code[class*="language-"],
+.markdown-rendered code,
+.cm-inline-code,
+.cm-hmd-codeblock,
+.cm-hmd-frontmatter,
+.HyperMD-table-2,
+.cm-math {
+    font-family: var(--vr-font-monospace) !important;
+}

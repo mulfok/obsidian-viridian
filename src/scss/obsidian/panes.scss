@@ -1,0 +1,49 @@
+/* --- PANES --- */
+.workspace-leaf {
+    & .view-header {
+        border-bottom: none !important;
+        /*box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.15) inset;*/
+        
+        & .view-header-title {
+            color: var(--text-faint);
+        }
+    }
+
+    &.mod-active .view-header {
+        border-bottom: none;
+
+        & .view-header-title {
+            color: var(--text-normal);
+        }
+    }
+}
+
+/* Less intrusive sliding panes box shadow */
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.workspace-leaf {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+/* Resize Handles */
+.workspace-split {
+    &.mod-vertical > * > .workspace-leaf-resize-handle,
+    &.mod-left-split > .workspace-leaf-resize-handle,
+    &.mod-right-split > .workspace-leaf-resize-handle {
+        width: 1px;
+        height: 105%;
+        top: -24px;
+        background: transparent;
+        transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+    
+        &:hover {
+            width: 4px;
+            background: var(--text-accent);
+            transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+        }
+
+        &:active {
+            width: 5px;
+            background: var(--text-accent-hover);
+            transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+        }
+    }
+}

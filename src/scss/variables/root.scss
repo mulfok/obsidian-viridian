@@ -9,82 +9,95 @@
 
     /* --- VIRIDIAN VARIABLES --- */
     /* Fonts */
-    --vfont-body: "Karla";
-    --vfont-editor: "Karla";
-    --vfont-header: "DM Sans";
-    --vfont-monospace: "Input Mono Condensed";
-    --vfont-ui: "Manrope";
+    --vr-font-body: "Source Serif Pro";
+    --vr-font-editor: "Victor Mono";
+    --vr-font-header: "Lora";
+    --vr-font-monospace: "Victor Mono";
+    --vr-font-ui: "Manrope";
     
-    --vfont-headerEM: "DM Sans";
+    --vr-font-headerEM: "Lora";
 
     /* Font Sizes */
-    --vfont-normal-size: 14px;
-    --vfont-small-size: 11px;
+    --vr-font-size-large: 20px;
+    --vr-font-size-normal: 14px;
+    --vr-font-size-small: 11px;
 
     /* Typography */
-    --vline-height: 1.3em;
+    --vr-line-height: 1.3em;
 
-    /* Colours */
-    --accent-r: 75;
-    --accent-g: 100;
-    --accent-b: 68;
+    --vr-hr-padding: 12px;
+    --vr-hr-sym: "¶"; /* ¶ */
 
-    --accent-hover-r: 64;
-    --accent-hover-g: 130;
-    --accent-hover-b: 109;
+    --vr-header-sym: "#"; /* § */
 
     /* Headings */
-    --vh1-weight: 800;
-    --vh2-weight: 800;
-    --vh3-weight: 600;
-    --vh4-weight: 600;
-    --vh5-weight: 500;
-    --vh6-weight: 400;
+    --vr-h1-weight: 800;
+    --vr-h2-weight: 800;
+    --vr-h3-weight: 600;
+    --vr-h4-weight: 600;
+    --vr-h5-weight: 500;
+    --vr-h6-weight: 400;
 
-    --vh1-weightEM: 800;
-    --vh2-weightEM: 800;
-    --vh3-weightEM: 600;
-    --vh4-weightEM: 600;
-    --vh5-weightEM: 500;
-    --vh6-weightEM: 400;
+    --vr-h1-weightEM: 800;
+    --vr-h2-weightEM: 800;
+    --vr-h3-weightEM: 600;
+    --vr-h4-weightEM: 600;
+    --vr-h5-weightEM: 500;
+    --vr-h6-weightEM: 400;
 
-    --vh1-size: 2.00em;
-    --vh2-size: 1.80em;
-    --vh3-size: 1.60em;
-    --vh4-size: 1.40em;
-    --vh5-size: 1.20em;
-    --vh6-size: 1.00em;
+    --vr-h1-size: 2.50em;
+    --vr-h2-size: 2.20em;
+    --vr-h3-size: 1.90em;
+    --vr-h4-size: 1.60em;
+    --vr-h5-size: 1.30em;
+    --vr-h6-size: 1.00em;
 
-    --vh1-sizeEM: 2.00em;
-    --vh2-sizeEM: 1.80em;
-    --vh3-sizeEM: 1.60em;
-    --vh4-sizeEM: 1.40em;
-    --vh5-sizeEM: 1.20em;
-    --vh6-sizeEM: 1.00em;
+    --vr-h1-sizeEM: 2.50em;
+    --vr-h2-sizeEM: 2.20em;
+    --vr-h3-sizeEM: 1.90em;
+    --vr-h4-sizeEM: 1.60em;
+    --vr-h5-sizeEM: 1.30em;
+    --vr-h6-sizeEM: 1.00em;
 
-    --vh1-style: normal;
-    --vh2-style: normal;
-    --vh3-style: normal;
-    --vh4-style: normal;
-    --vh5-style: normal;
-    --vh6-style: normal;
+    --vr-h1-style: normal;
+    --vr-h2-style: normal;
+    --vr-h3-style: normal;
+    --vr-h4-style: normal;
+    --vr-h5-style: normal;
+    --vr-h6-style: normal;
 
-    --vh1-styleEM: normal;
-    --vh2-styleEM: normal;
-    --vh3-styleEM: normal;
-    --vh4-styleEM: normal;
-    --vh5-styleEM: normal;
-    --vh6-styleEM: normal;
+    --vr-h1-styleEM: normal;
+    --vr-h2-styleEM: normal;
+    --vr-h3-styleEM: normal;
+    --vr-h4-styleEM: normal;
+    --vr-h5-styleEM: normal;
+    --vr-h6-styleEM: normal;
+
+    --vr-header-bg-alpha: 0.25;
 
     /* Border Radii */
-    --vbwidth-normal: 2px;
-    --vbradius-normal: 8px;
+    --vr-border-width-normal: 2px;
+
+    --vr-border-radius-small: 2px;
+    --vr-border-radius-normal: 8px;
 
     /* User Interface */
-    --vsidebar-padding: 2px;
-    --vsidebar-nav-padding: 4px;
-    
-    --vheader-h-padding: 8px;
+    --vr-sidebar-padding: 2px;
+    --vr-sidebar-nav-padding: 4px;
+    --vr-sidebar-border-width: 1px;
 
-    --vcallout-padding: 5px;
+    --vr-workspace-tab-padding: 2px;
+    
+    --vr-header-hori-padding: 8px;
+
+    --vr-callout-padding: 5px;
+
+    --vr-statusbar-item-padding: 6px;
+
+    --vr-scrollbar-thickness: 6px;
+
+    /* Animation */
+    --vr-duration-normal: 200ms;
+
+    --vr-animation-smooth: cubic-bezier(0.45,0.05,0.55,0.95);
 }

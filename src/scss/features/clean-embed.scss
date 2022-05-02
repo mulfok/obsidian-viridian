@@ -1,0 +1,26 @@
+/* --- CLEAN EMBED --- */
+.markdown-embed {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+
+    &-content {
+        & > .markdown-preview-view {
+            max-height: unset;
+            padding: 0px;
+        }
+    }
+
+    &-title,
+    &-link,
+    &-page::-webkit-scrollbar,
+    & .show-indentation-guide::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Shrink space taken by "not created" messages */
+.file-embed.mod-empty {
+    padding: 5px 10px;
+    margin: 0px;
+}

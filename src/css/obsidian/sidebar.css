@@ -1,22 +1,132 @@
 /* --- SIDEBAR --- */
 /* Sidebar Buttons */
 .side-dock-ribbon-action {
-  padding-top: var(--vsidebar-padding);
-  padding-bottom: var(--vsidebar-padding);
+  padding-top: var(--vr-sidebar-padding);
+  padding-bottom: var(--vr-sidebar-padding);
+}
+
+.mod-left .workspace-ribbon-collapse-btn {
+  margin: 0;
+  padding: 20px 6px 15px;
 }
 
 /* Navigation Header */
-.nav-header {
-  padding: 13px 5px 2px;
-}
-
 .nav-buttons-container {
-  justify-content: flex-start;
+  justify-content: center;
+  align-content: center;
 }
 
 .nav-action-button {
   margin: 0px;
-  padding: 0px var(--vsidebar-nav-padding);
+  padding: 0px var(--vr-sidebar-nav-padding);
+}
+
+.nav-header {
+  padding: 8px 5px 2px;
+  border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+}
+
+.nav-folder.mod-root > .nav-folder-title[data-path="/"] {
+  /* TODO: Fix up this styling, I'm not a fan */
+  color: var(--text-muted);
+  font-size: 12px;
+  background: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  margin: 4px 0px;
+  z-index: 2;
+  border-radius: var(--vr-border-radius-normal);
+}
+
+/* Workspace Tab Navigation */
+.workspace-tabs {
+  padding-right: 0;
+  border-left: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+  border-right: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+  background: var(--background-secondary);
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 40px;
+}
+.workspace-split.mod-right-split .workspace-tab-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-height: 40px;
+}
+
+.workspace-tab-header-container {
+  min-height: unset !important;
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
+  border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+}
+
+.workspace-tab-header {
+  width: 24px;
+  height: 24px;
+  padding: var(--vr-workspace-tab-padding);
+  margin: 0px;
+}
+.workspace-tab-header .workspace-tab-header-inner-icon svg {
+  height: 16px;
+  width: 16px;
+  vertical-align: 1px;
+  position: relative;
+  left: 1px;
+}
+
+.workspace-tab-header-inner {
+  background: transparent !important;
+  padding: 0px;
+}
+
+/* Stop colour change on collapse
+NOTE:
+    I just did this since I didn't like how
+the colour changed on the ribbon when
+collapsing it. This is purely preferential,
+and I may add a sytle setting to toggle this
+in the future. */
+.workspace-ribbon.is-collapsed {
+  background-color: var(--background-secondary-alt);
+}
+
+/* Floating Collapse Buttons */
+.side-dock-ribbon.mod-right {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 36px 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  opacity: 0.5;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--vr-border-radius-normal);
+  transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+}
+.side-dock-ribbon.mod-right:hover {
+  opacity: 1;
+}
+.side-dock-ribbon.mod-right .workspace-ribbon-collapse-btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 9px 0px;
 }
 
 /*# sourceMappingURL=sidebar.css.map */

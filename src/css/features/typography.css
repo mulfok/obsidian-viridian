@@ -1,7 +1,7 @@
 /* --- TYPOGRAPHY --- */
 /* Body Line Height */
 body p, body li {
-  line-height: var(--vline-height);
+  line-height: var(--vr-line-height);
 }
 
 /*# sourceMappingURL=typography.css.map */

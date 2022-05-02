@@ -6,13 +6,17 @@ th {
 
 /* Dataview Tables */
 .table-view-table {
+  border-collapse: collapse !important;
   border: 1px solid var(--background-modifier-border);
 }
 .table-view-table .table-view-th {
-  font-size: var(--vfont-normal-size);
+  font-size: var(--vr-font-size-normal);
   border-width: 0px;
   border-bottom: 1px solid var(--background-modifier-border);
   border-right: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-tbody {
+  border-width: 0px;
 }
 .table-view-table .table-view-tbody tr {
   border-bottom: 1px solid var(--background-modifier-border);

@@ -2,8 +2,11 @@
 /* Buttons - Minimise, Maximise, Close */
 .theme-dark, .theme-light {
     & .titlebar-button {
-        &.mod-minimize:hover { background-color: var(--text-accent); }
-        &.mod-maximize:hover { background-color: var(--text-accent); }
-        &.mod-close:hover { background-color: var(--text-accent); }
+        &.mod-minimize:hover { background-color: var(--vr-green); }
+        &.mod-maximize:hover { background-color: var(--vr-yellow); }
+        &.mod-close:hover { background-color: var(--vr-red); }
     }
 }
+
+.titlebar { background: var(--background-secondary-alt); }
+.titlebar-text { display: none; }

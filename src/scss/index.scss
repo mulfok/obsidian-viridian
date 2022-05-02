@@ -14,11 +14,19 @@
             OBSIDIAN
 ------------------------------------- */
 @import "obsidian/fonts";
-@import "obsidian/frontmatter";
+@import "obsidian/codeblocks";
 @import "obsidian/sidebar";
 @import "obsidian/callouts";
 @import "obsidian/tables";
 @import "obsidian/titlebar";
+@import "obsidian/statusbar";
+@import "obsidian/horizontalrules";
+@import "obsidian/links";
+@import "obsidian/modals";
+@import "obsidian/panes";
+@import "obsidian/scrollbars.scss";
+@import "obsidian/blockquotes";
+@import "obsidian/search-replace";
 
 /* -------------------------------------
             FEATURES
@@ -27,6 +35,8 @@
 @import "features/typography";
 @import "features/roundness";
 @import "features/aside";
+@import "features/clean-embed";
+@import "features/highlights";
 
 /* -------------------------------------
             PLUGINS

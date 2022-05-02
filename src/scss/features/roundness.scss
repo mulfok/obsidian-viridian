@@ -3,8 +3,11 @@
 img[src]:not(.banner-image),
 aside,
 button,
-.mod-empty {
-    border-radius: var(--vbradius-normal);
+.mod-empty,
+code[class*="language-"],
+.modal,
+input {
+    border-radius: var(--vr-border-radius-normal) !important;
 }
 
 /* Rounded Tables
@@ -24,8 +27,8 @@ table:not(.table-view-table) { /* Disabled for Dataview Tables right now. */
     border-collapse: separate !important;
     border-spacing: 0;
 
-    & tr:first-child th:first-child { border-top-left-radius: var(--vbradius-normal); } /* Top-Left Radius */
-    & tr:first-child th:last-child { border-top-right-radius: var(--vbradius-normal); } /* Top-Right Radius */
-    & tr:last-child td:first-child { border-bottom-left-radius: var(--vbradius-normal); } /* Bottom-Left Radius */
-    & tr:last-child td:last-child { border-bottom-right-radius: var(--vbradius-normal); } /* Bottom-Right Radius */
+    & tr:first-child th:first-child { border-top-left-radius: var(--vr-border-radius-normal); } /* Top-Left Radius */
+    & tr:first-child th:last-child { border-top-right-radius: var(--vr-border-radius-normal); } /* Top-Right Radius */
+    & tr:last-child td:first-child { border-bottom-left-radius: var(--vr-border-radius-normal); } /* Bottom-Left Radius */
+    & tr:last-child td:last-child { border-bottom-right-radius: var(--vr-border-radius-normal); } /* Bottom-Right Radius */
 }

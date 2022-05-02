@@ -3,8 +3,11 @@
 img[src]:not(.banner-image),
 aside,
 button,
-.mod-empty {
-  border-radius: var(--vbradius-normal);
+.mod-empty,
+code[class*=language-],
+.modal,
+input {
+  border-radius: var(--vr-border-radius-normal) !important;
 }
 
 /* Rounded Tables
@@ -29,16 +32,16 @@ table:not(.table-view-table) {
   /* Bottom-Right Radius */
 }
 table:not(.table-view-table) tr:first-child th:first-child {
-  border-top-left-radius: var(--vbradius-normal);
+  border-top-left-radius: var(--vr-border-radius-normal);
 }
 table:not(.table-view-table) tr:first-child th:last-child {
-  border-top-right-radius: var(--vbradius-normal);
+  border-top-right-radius: var(--vr-border-radius-normal);
 }
 table:not(.table-view-table) tr:last-child td:first-child {
-  border-bottom-left-radius: var(--vbradius-normal);
+  border-bottom-left-radius: var(--vr-border-radius-normal);
 }
 table:not(.table-view-table) tr:last-child td:last-child {
-  border-bottom-right-radius: var(--vbradius-normal);
+  border-bottom-right-radius: var(--vr-border-radius-normal);
 }
 
 /*# sourceMappingURL=roundness.css.map */

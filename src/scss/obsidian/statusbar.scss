@@ -1,0 +1,38 @@
+/* --- STATUSBAR --- */
+.status-bar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    border-top-left-radius: var(--vr-border-radius-normal);
+    border: 1px solid var(--background-modifier-border);
+
+    justify-content: flex-end;
+    align-items: center;
+
+    max-height: unset;
+    padding: 0px 5px;
+}
+
+.status-bar-item {
+    padding: 4px var(--vr-statusbar-item-padding);
+
+    /* Item separators*/
+    &:not(:first-child):not(.separator)::before {
+        content: "∙";
+
+        color: var(--text-faint);
+        font-weight: 800;
+
+        position: relative;
+        right: 6px;
+    }
+}
+
+/* Remove vault statistics margin
+NOTE:
+    I'm unsure why there's even a margin
+to begin with. If there's a reason and
+you actually know it, please let me know.
+*/
+.obsidian-vault-statistics--item { margin-left: 0 !important; }

@@ -2,45 +2,65 @@
 
 /* Preview Mode */
 .markdown-preview-view {
-    & h1,
-    & h2,
-    & h3,
-    & h4,
-    & h5,
-    & h6 {
-        background-color: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.25);
+    & h1, & h2, & h3, & h4, & h5, & h6 {
+        border-radius: var(--vr-border-radius-normal);
+        padding-left: var(--vr-header-hori-padding);
 
-        border-radius: var(--vbradius-normal);
-        /*border: var(--vbwidth-normal) solid rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.50);*/
+        position: relative;
+        overflow: hidden; /* This maaaaay be a little busted */
 
-        padding-left: var(--vheader-h-padding);
+        color: var(--text-accent);
 
-        /*
+        z-index: 0;
+
+        /* Header Background Text */
         &::before {
-            content: "§ ";
-
-            overflow: hidden;
+            content: var(--vr-header-sym);
             font-size: 2em;
-            color:rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.50);
-        }*/
+            opacity: 0.2;
+
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            width: 1em;
+            height: 1em;
+            text-align: center;
+
+            color: var(--text-normal);
+
+            z-index: -1;
+        }
     }
+
+    & h1, & h3, & h5 { background-color: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha)); }
+    & h2, & h4, & h6 { background-color: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha)); }
+
+    /* TODO: Move to separate colour scheme
+    & h1 { background-color: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha)); }
+    & h2 { background-color: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-header-bg-alpha)); }
+    & h3 { background-color: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha)); }
+    & h4 { background-color: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-header-bg-alpha)); }
+    & h5 { background-color: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-header-bg-alpha)); }
+    & h6 { background-color: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-header-bg-alpha)); }
+    */
 }
 
 /* Edit Mode */
-.cm-s-obsidian .HyperMD-header { padding-bottom: 0px; }
-
 .cm-s-obsidian {
-    & .HyperMD-header-1,
-    & .HyperMD-header-2,
-    & .HyperMD-header-3,
-    & .HyperMD-header-4,
-    & .HyperMD-header-5,
-    & .HyperMD-header-6 {
-        background-color: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.25);
-
-        border-radius: var(--vbradius-normal);
-        /*border: var(--vbwidth-normal) solid rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.50);*/
-
+    & .HyperMD-header {
         padding-bottom: 0px;
+        margin-bottom: 2px !important;
+
+        border-radius: var(--vr-border-radius-normal);
+
+        &.HyperMD-header-1 { background-color: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha)); }
+        &.HyperMD-header-2 { background-color: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-header-bg-alpha)); }
+        &.HyperMD-header-3 { background-color: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha)); }
+        &.HyperMD-header-4 { background-color: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-header-bg-alpha)); }
+        &.HyperMD-header-5 { background-color: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-header-bg-alpha)); }
+        &.HyperMD-header-6 { background-color: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-header-bg-alpha)); }
+    
+        & .cm-header { color: var(--text-accent); }
     }
 }

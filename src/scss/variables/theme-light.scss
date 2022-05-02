@@ -1,47 +1,89 @@
 /* --- THEME LIGHT --- */
 .theme-light {
     /* Accent Colours */
-    --text-accent: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); /* #4b6444 */
-    --text-accent-hover: rgb(var(--accent-hover-r), var(--accent-hover-g), var(--accent-hover-b)); /* #40826d */
+    --vr-accent-r: 75;
+    --vr-accent-g: 100;
+    --vr-accent-b: 68;
 
-    --interactive-accent: rgb(var(--accent-r), var(--accent-g), var(--accent-b)); /* #4b6444 */
-    --interactive-accent-hover: rgb(var(--accent-hover-r), var(--accent-hover-g), var(--accent-hover-b)); /* #40826d */
+    --vr-accent-hover-r: 64;
+    --vr-accent-hover-g: 130;
+    --vr-accent-hover-b: 109;
+
+    --text-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b)); /* #4b6444 */
+    --text-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b)); /* #40826d */
+
+    --interactive-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b)); /* #4b6444 */
+    --interactive-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b)); /* #40826d */
 
     /* Text Colours */
-    --text-normal: #4a341c;
+    --text-normal: #33271a;
     
-    --text-muted: ;
-    --text-muted-rgb: ;
-    --text-faint: ;
+    --text-muted: #474032;
+    --text-muted-rgb: rgb(40, 29, 27);
+    --text-faint: #9e9892;
     
-    --text-error: ;
-    --text-error-hover: ;
+    --text-error: #b45252;
+    --text-error-hover: #e3624b;
 
-    --text-highlight-bg: ;
-    --text-highlight-bg-active: ;
+    --text-highlight-bg: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+    --text-highlight-bg-active: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
 
-    --text-selection: ;
+    --text-selection: #a2dcc7;
     
-    --text-on-accent: ;
+    --text-on-accent: #33271a;
 
     /* Interface Colours */
+    --background-primary: #f5f4f2;
+    --background-primary-alt: #f5f4f2;
 
-    --background-primary: ;
-    --background-primary-alt: ;
+    --background-secondary: #edeae4;
+    --background-secondary-alt: #e3ded5;
 
-    --background-secondary: ;
-    --background-secondary-alt: ;
+    --background-modifier-border: #ded6cc;
 
-    --background-modifier-border: ;
+    --background-modifier-form-field: #e3ded5;
+    --background-modifier-form-field-highlighted: #edeae4;
 
-    --background-modifier-form-field: ;
-    --background-modifier-form-field-highlighted: ;
+    --background-modifier-success: #c2d36880;
 
-    --background-modifier-success: ;
+    --background-modifier-error: #000000;
+    --background-modifier-error-rgb: #000000;
+    --background-modifier-error-hover: #000000;
 
-    --background-modifier-error: ;
-    --background-modifier-error-rgb: ;
-    --background-modifier-error-hover: ;
+    --background-modifier-cover: #9e989280;
 
-    --background-modifier-cover: ;
+    /* Scrollbars */
+    --scrollbar-active-thumb-bg: rgba(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b), 0.5);
+    --vr-scrollbar-hover-thumb-bg: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), 0.5);
+    --scrollbar-bg: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+
+    /* Colour Palette - In order from Viridian*/
+    --vr-green: rgb(180, 186, 71); /* #b4ba47 */
+    --vr-blue: rgb(104, 194, 211); /* #68c2d3 */
+    --vr-violet: rgb(113, 122, 255); /* #717aff */
+    --vr-purple: rgb(153, 110, 255); /* #996eff */
+    --vr-pink: rgb(255, 130, 174); /* #ff82ae */
+    --vr-red: rgb(255, 33, 33); /* #ff212 */
+    --vr-yellow: rgb(255, 196, 0); /* #ffc400 */
+    
+    --vr-green-r:   180; --vr-green-g:  186; --vr-green-b:  071;
+    --vr-blue-r:    104; --vr-blue-g:   194; --vr-blue-b:   211;
+    --vr-violet-r:  113; --vr-violet-g: 122; --vr-violet-b: 255;
+    --vr-purple-r:  153; --vr-purple-g: 110; --vr-purple-b: 255;
+    --vr-pink-r:    255; --vr-pink-g:   130; --vr-pink-b:   174;
+    --vr-red-r:     255; --vr-red-g:    033; --vr-red-b:    033;
+    --vr-yellow-r:  255; --vr-yellow-g: 196; --vr-yellow-b: 000;
+    
+    /* Highlighter Colours */
+    --vr-highlighter-alpha: 1;
+
+    --vr-highlight-colour-1: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-2: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-3: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-4: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-5: rgba(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-6: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-7: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-highlighter-alpha));
+    --vr-highlight-colour-8: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-highlighter-alpha));
 }

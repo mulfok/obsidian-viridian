@@ -1,0 +1,8 @@
+/* --- SEARCH AND REPLACE --- */
+.cm-s-obsidian span.obsidian-search-match-highlight,
+.markdown-preview-view .search-highlight.search-highlight div.is-active,
+.is-flashing.is-flashing {
+  color: var(--text-normal);
+  background: rgba(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b), var(--vr-highlighter-alpha));
+  border-radius: var(--vr-border-radius-small);
+}

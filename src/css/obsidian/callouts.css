@@ -1,25 +1,78 @@
 /* --- CALLOUTS --- */
-.callout,
-.is-collapsed .callout-title {
+div.callout {
+  /* General Styling */
   border: 0px;
-  border-radius: var(--vbradius-normal);
+  /* Roundness */
+  /* Colouring & Icons */
+}
+div.callout .callout-title {
+  padding: var(--vr-callout-padding) 10px;
+  border-top-left-radius: var(--vr-border-radius-normal);
+  border-top-right-radius: var(--vr-border-radius-normal);
+  transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
+}
+div.callout .is-collapsed .callout-title {
+  border-radius: var(--vr-border-radius-normal);
+}
+div.callout .is-collapsed .callout-content {
+  opacity: 0 !important;
+}
+div.callout[data-callout=abstract],
+div.callout [data-callout=summary],
+div.callout [data-callout=tldr] {
+  --callout-color: 50, 35, 145;
+  color: var(--callout-color);
+}
+div.callout[data-callout=abstract] .callout-fold,
+div.callout [data-callout=summary] .callout-fold,
+div.callout [data-callout=tldr] .callout-fold {
+  color: var(--callout-color);
+}
+div.callout[data-callout=metadata] {
+  --callout-color: var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b) !important;
+  --callout-icon: coffee !important;
+}
+
+/*
+.callout-content {
+    border-bottom-left-radius: var(--vr-border-radius-normal);
+    border-bottom-right-radius: var(--vr-border-radius-normal);
+}
+
+.callout.is-collapsed .callout-title {
+    border: 0px; border-radius: var(--vr-border-radius-normal);
+}*/
+/* OBSOLETE */
+/*.callout,
+.is-collapsed .callout-title {
+    border: 0px; border-radius: var(--vr-border-radius-normal);
 }
 
 .callout-title {
-  border-top-left-radius: var(--vbradius-normal);
-  border-top-right-radius: var(--vbradius-normal);
-  padding: var(--vcallout-padding) 10px;
+    border-top-left-radius: var(--vr-border-radius-normal);
+    border-top-right-radius: var(--vr-border-radius-normal);
+
+    padding: var(--vr-callout-padding) 10px;
+
+    transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
 }
 
 .callout-content {
-  border-bottom-left-radius: var(--vbradius-normal);
-  border-bottom-right-radius: var(--vbradius-normal);
+    border-bottom-left-radius: var(--vr-border-radius-normal);
+    border-bottom-right-radius: var(--vr-border-radius-normal);
 }
 
-.callout-fold svg,
-.callout-icon svg {
-  height: var(--vfont-normal-size);
-  width: var(--vfont-normal-size);
+.callout-fold,
+.callout-icon {
+    & svg {
+        height: var(--vr-font-size-normal);
+        width: var(--vr-font-size-normal);
+    }
 }
+
+.callout-fold {
+    padding-top: 3px;
+    height: 16px;
+}*/
 
 /*# sourceMappingURL=callouts.css.map */

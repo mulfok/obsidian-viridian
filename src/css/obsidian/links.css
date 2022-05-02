@@ -1,0 +1,24 @@
+/* --- LINKS --- */
+.internal-link, .external-link, .tag {
+  font-feature-settings: "smcp";
+  text-decoration: none !important;
+}
+
+.external-link {
+  color: var(--vr-blue);
+}
+
+cite {
+  font-feature-settings: "smcp";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Stop footnotes affecting line height */
+.footnote-ref {
+  vertical-align: top;
+  top: -0.3em;
+}
+
+/*# sourceMappingURL=links.css.map */
