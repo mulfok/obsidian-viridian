@@ -1,0 +1,44 @@
+/* --- COMMAND PALETTE --- */
+/* Minify instruction text */
+.prompt-instructions {
+  padding: 0px;
+  text-align: right;
+}
+
+/* Commands */
+.suggestion-item {
+  display: grid;
+  padding: 10px 30px;
+  /* Alternating Row Colour */
+  /* Suggestion prefix under command name */
+}
+.suggestion-item:nth-child(odd):not(:hover) {
+  background: var(--background-primary-alt);
+}
+.suggestion-item .suggestion-content {
+  order: 1;
+  padding-bottom: 2px;
+  font-size: var(--vr-font-size-normal);
+  line-height: 1em;
+}
+.suggestion-item .suggestion-prefix {
+  display: block;
+  font-weight: 1000;
+  font-size: var(--vr-font-size-small);
+  font-style: italic;
+  line-height: 1em;
+  order: 2;
+  color: var(--text-faint);
+  /* Remove colon */
+}
+.suggestion-item .suggestion-prefix::after {
+  content: none;
+}
+.suggestion-item .suggestion-hotkey {
+  order: 3;
+  margin-left: auto;
+  grid-row: span;
+  border: 1px solid var(--interactive-accent);
+}
+
+/*# sourceMappingURL=commandpalette.css.map */

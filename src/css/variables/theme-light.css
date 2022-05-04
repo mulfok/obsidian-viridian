@@ -1,4 +1,9 @@
-/* --- THEME LIGHT --- */
+/* --- THEME LIGHT --- 
+- Viridian/Adagio Light
+- by mulfok
+- mulfok#6931 on Discord
+- https://mulfok.neocities.org/
+*/
 .theme-light {
   /* Accent Colours */
   --vr-accent-r: 75;
@@ -28,7 +33,7 @@
   --text-on-accent: #33271a;
   /* Interface Colours */
   --background-primary: #f5f4f2;
-  --background-primary-alt: #f5f4f2;
+  --background-primary-alt: #f0eeeb;
   --background-secondary: #edeae4;
   --background-secondary-alt: #e3ded5;
   --background-modifier-border: #ded6cc;

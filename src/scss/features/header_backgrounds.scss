@@ -54,13 +54,18 @@
 
         border-radius: var(--vr-border-radius-normal);
 
+        &.HyperMD-header-1, &.HyperMD-header-3, &.HyperMD-header-5 { background-color: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha)); }
+        &.HyperMD-header-2, &.HyperMD-header-4, &.HyperMD-header-6 { background-color: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha)); }
+
+        /* TODO: Move to separate colour scheme
         &.HyperMD-header-1 { background-color: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha)); }
         &.HyperMD-header-2 { background-color: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-header-bg-alpha)); }
         &.HyperMD-header-3 { background-color: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha)); }
         &.HyperMD-header-4 { background-color: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-header-bg-alpha)); }
         &.HyperMD-header-5 { background-color: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-header-bg-alpha)); }
         &.HyperMD-header-6 { background-color: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-header-bg-alpha)); }
-    
+        */
+
         & .cm-header { color: var(--text-accent); }
     }
 }

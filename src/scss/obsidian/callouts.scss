@@ -1,5 +1,5 @@
 /* --- CALLOUTS --- */
-div.callout {
+.callout {
     /* General Styling */
     border: 0px;
 
@@ -41,13 +41,14 @@ div.callout {
     }
 }
 
-/*
-.callout-content {
-    border-bottom-left-radius: var(--vr-border-radius-normal);
-    border-bottom-right-radius: var(--vr-border-radius-normal);
+.callout, .is-collapsed .callout-title {
+    border: 0px;
+    border-radius: var(--vr-border-radius-normal);
 }
 
-.callout.is-collapsed .callout-title {
+/*
+.callout,
+.is-collapsed .callout-title {
     border: 0px; border-radius: var(--vr-border-radius-normal);
 }*/
 

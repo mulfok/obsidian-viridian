@@ -6,6 +6,7 @@ button,
 .mod-empty,
 code[class*=language-],
 .modal,
+.prompt,
 input {
   border-radius: var(--vr-border-radius-normal) !important;
 }

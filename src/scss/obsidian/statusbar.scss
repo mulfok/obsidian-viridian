@@ -17,7 +17,7 @@
 .status-bar-item {
     padding: 4px var(--vr-statusbar-item-padding);
 
-    /* Item separators*/
+    /* Item separators */
     &:not(:first-child):not(.separator)::before {
         content: "∙";
 
