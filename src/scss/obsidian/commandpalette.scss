@@ -7,10 +7,12 @@
     text-align: right;
 }
 
+input.prompt-input {
+    border-width: var(--vr-border-width-normal);
+}
+
 /* Commands */
 .suggestion-item {
-    display: grid;
-
     padding: 10px 30px;
 
     /* Alternating Row Colour */
@@ -19,7 +21,7 @@
     }
 
     & .suggestion-content { 
-        order: 1;
+        /*order: 1;*/
 
         padding-bottom: 2px;
 
@@ -37,7 +39,7 @@
 
         line-height: 1em;
 
-        order: 2;
+        /*order: 2;*/
 
         color: var(--text-faint);
 
@@ -45,11 +47,14 @@
     }
 
     & .suggestion-hotkey {
-        order: 3;
+        /*order: 3;*/
         margin-left: auto;
 
-        grid-row: span;
+        border: var(--vr-border-width-normal) solid var(--interactive-accent);
+    }
 
-        border: 1px solid var(--interactive-accent);
+    & .suggestion-highlight {
+        background: var(--vr-highlight-colour-1);
+        color: var(--text-normal);
     }
 }

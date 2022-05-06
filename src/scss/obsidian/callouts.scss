@@ -9,6 +9,28 @@
         border-top-right-radius: var(--vr-border-radius-normal);
 
         transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
+    
+        gap: 5px;
+
+        /* Layout */
+        & .callout-fold {
+            order: 1;
+
+            padding-top: 2px;
+            height: 16px;
+
+            color: rgb(var(--callout-color));
+        }
+
+        & .callout-title-inner {
+            order: 2;
+
+            color: rgb(var(--callout-color));
+        }
+        
+        & .callout-icon {
+            order: 3;
+        }
     }
 
     /* Roundness */
@@ -27,12 +49,6 @@
     [data-callout="summary"],
     [data-callout="tldr"] {
         --callout-color: 50, 35, 145;
-
-        color: var(--callout-color);
-
-        & .callout-fold {
-            color: var(--callout-color);
-        }
     }
 
     &[data-callout="metadata"] {
@@ -45,43 +61,3 @@
     border: 0px;
     border-radius: var(--vr-border-radius-normal);
 }
-
-/*
-.callout,
-.is-collapsed .callout-title {
-    border: 0px; border-radius: var(--vr-border-radius-normal);
-}*/
-
-
-/* OBSOLETE */
-/*.callout,
-.is-collapsed .callout-title {
-    border: 0px; border-radius: var(--vr-border-radius-normal);
-}
-
-.callout-title {
-    border-top-left-radius: var(--vr-border-radius-normal);
-    border-top-right-radius: var(--vr-border-radius-normal);
-
-    padding: var(--vr-callout-padding) 10px;
-
-    transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
-}
-
-.callout-content {
-    border-bottom-left-radius: var(--vr-border-radius-normal);
-    border-bottom-right-radius: var(--vr-border-radius-normal);
-}
-
-.callout-fold,
-.callout-icon {
-    & svg {
-        height: var(--vr-font-size-normal);
-        width: var(--vr-font-size-normal);
-    }
-}
-
-.callout-fold {
-    padding-top: 3px;
-    height: 16px;
-}*/

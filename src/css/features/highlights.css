@@ -8,7 +8,7 @@ styling of code highlights for parents. */
 }
 .markdown-preview-view mark {
   background: var(--vr-highlight-colour-1);
-  color: var(--text-normal);
+  color: var(--vr-text-black);
   font-style: normal;
   font-weight: normal;
   /* Unify styling for colours > 4 */
@@ -18,7 +18,7 @@ styling of code highlights for parents. */
   font-size: 1em;
   border-radius: 0;
   padding: 0px;
-  color: var(--text-normal);
+  color: var(--vr-text-black);
   background: var(--vr-highlight-colour-5);
 }
 .markdown-preview-view em > mark {
@@ -52,7 +52,7 @@ free. */
 }
 .cm-s-obsidian .cm-highlight {
   background: var(--vr-highlight-colour-1) !important;
-  color: var(--text-normal);
+  color: var(--vr-text-black);
   font-style: normal;
   font-weight: normal;
   /* Unify styling for colours > 4 */
@@ -65,7 +65,7 @@ free. */
   font-size: 1em;
   border-radius: 0;
   padding: 0px;
-  color: var(--text-normal);
+  color: var(--vr-text-black);
   background: var(--vr-highlight-colour-5) !important;
 }
 .cm-s-obsidian .cm-highlight.cm-inline-code.cm-strong {

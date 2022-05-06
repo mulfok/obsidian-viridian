@@ -5,9 +5,12 @@
   text-align: right;
 }
 
+input.prompt-input {
+  border-width: var(--vr-border-width-normal);
+}
+
 /* Commands */
 .suggestion-item {
-  display: grid;
   padding: 10px 30px;
   /* Alternating Row Colour */
   /* Suggestion prefix under command name */
@@ -16,7 +19,7 @@
   background: var(--background-primary-alt);
 }
 .suggestion-item .suggestion-content {
-  order: 1;
+  /*order: 1;*/
   padding-bottom: 2px;
   font-size: var(--vr-font-size-normal);
   line-height: 1em;
@@ -27,7 +30,7 @@
   font-size: var(--vr-font-size-small);
   font-style: italic;
   line-height: 1em;
-  order: 2;
+  /*order: 2;*/
   color: var(--text-faint);
   /* Remove colon */
 }
@@ -35,10 +38,13 @@
   content: none;
 }
 .suggestion-item .suggestion-hotkey {
-  order: 3;
+  /*order: 3;*/
   margin-left: auto;
-  grid-row: span;
-  border: 1px solid var(--interactive-accent);
+  border: var(--vr-border-width-normal) solid var(--interactive-accent);
+}
+.suggestion-item .suggestion-highlight {
+  background: var(--vr-highlight-colour-1);
+  color: var(--text-normal);
 }
 
 /*# sourceMappingURL=commandpalette.css.map */
