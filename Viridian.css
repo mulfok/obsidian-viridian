@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/** -- == === === === === == --
+        VIRIDIAN v0.0.1
+            by mulfok
+-- == === === === === == -- **/
+/* -------------------------------------
+            ASSETS
+------------------------------------- */
 /* --- FONTS --- */
 /* Lora */
 @font-face {
@@ -306,5 +314,1268 @@
   font-display: swap;
   src: url("data:font/woff2;charset=utf-8;base64,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") format("woff2");
 }
+/* -------------------------------------
+            VARIABLES
+------------------------------------- */
+:root {
+  /*
+  Remember to run `sass --watch scss:css` before any changes!
+  Note that "EM" means "Edit Mode".
+  */
+  /* --- OBSIDIAN VARIABLES --- */
+  /* --- VIRIDIAN VARIABLES --- */
+  /* Fonts */
+  --vr-font-body: "Source Serif Pro";
+  --vr-font-editor: "Victor Mono";
+  --vr-font-header: "Optima S";
+  --vr-font-monospace: "Victor Mono";
+  --vr-font-ui: "Recursive";
+  --vr-font-headerEM: "Victor Mono";
+  /* Font Sizes */
+  --vr-font-size-large: 20px;
+  --vr-font-size-normal: 14px;
+  --vr-font-size-small: 11px;
+  /* Typography */
+  --vr-line-height: 1.3em;
+  --vr-hr-padding: 12px;
+  --vr-hr-sym: "¶";
+  /* ¶ */
+  --vr-header-sym: "#";
+  /* § */
+  /* Headings */
+  --vr-h1-weight: 800;
+  --vr-h2-weight: 800;
+  --vr-h3-weight: 600;
+  --vr-h4-weight: 600;
+  --vr-h5-weight: 500;
+  --vr-h6-weight: 400;
+  --vr-h1-weightEM: 800;
+  --vr-h2-weightEM: 800;
+  --vr-h3-weightEM: 600;
+  --vr-h4-weightEM: 600;
+  --vr-h5-weightEM: 500;
+  --vr-h6-weightEM: 400;
+  --vr-h1-size: 2.50em;
+  --vr-h2-size: 2.20em;
+  --vr-h3-size: 1.90em;
+  --vr-h4-size: 1.60em;
+  --vr-h5-size: 1.30em;
+  --vr-h6-size: 1.00em;
+  --vr-h1-sizeEM: 2.50em;
+  --vr-h2-sizeEM: 2.20em;
+  --vr-h3-sizeEM: 1.90em;
+  --vr-h4-sizeEM: 1.60em;
+  --vr-h5-sizeEM: 1.30em;
+  --vr-h6-sizeEM: 1.00em;
+  --vr-h1-style: normal;
+  --vr-h2-style: normal;
+  --vr-h3-style: normal;
+  --vr-h4-style: normal;
+  --vr-h5-style: normal;
+  --vr-h6-style: normal;
+  --vr-h1-styleEM: normal;
+  --vr-h2-styleEM: normal;
+  --vr-h3-styleEM: normal;
+  --vr-h4-styleEM: normal;
+  --vr-h5-styleEM: normal;
+  --vr-h6-styleEM: normal;
+  --vr-header-bg-alpha: 0.25;
+  --vr-highlighter-alpha: 1;
+  /* Border Radii */
+  --vr-border-width-normal: 2px;
+  --vr-border-radius-small: 2px;
+  --vr-border-radius-normal: 8px;
+  /* User Interface */
+  --vr-sidebar-padding: 2px;
+  --vr-sidebar-nav-padding: 4px;
+  --vr-sidebar-border-width: 1px;
+  --vr-workspace-tab-padding: 2px;
+  --vr-header-hori-padding: 8px;
+  --vr-callout-padding: 5px;
+  --vr-statusbar-item-padding: 6px;
+  --vr-scrollbar-thickness: 6px;
+  /* Animation */
+  --vr-duration-normal: 200ms;
+  --vr-animation-smooth: cubic-bezier(0.45,0.05,0.55,0.95);
+}
 
-/*# sourceMappingURL=fonts.css.map */
+/* --- THEME DARK --- 
+- Viridian Dark
+- by mulfok
+- mulfok#6931 on Discord
+- https://mulfok.neocities.org/
+*/
+.theme-dark {
+  /* Accent Colours */
+  --vr-accent-r: 75;
+  --vr-accent-g: 100;
+  --vr-accent-b: 68;
+  --vr-accent-hover-r: 64;
+  --vr-accent-hover-g: 130;
+  --vr-accent-hover-b: 109;
+  --text-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b));
+  /* #4b6444 */
+  --text-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b));
+  /* #40826d */
+  --interactive-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b));
+  /* #4b6444 */
+  --interactive-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b));
+  /* #40826d */
+  /* Text Colours */
+  --text-normal: #edddca;
+  --text-muted: #9c876b;
+  --text-muted-rgb: rgb(40, 29, 27);
+  --text-faint: #423b33;
+  --text-error: #b45252;
+  --text-error-hover: #e3624b;
+  --text-highlight-bg: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+  --text-highlight-bg-active: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+  --text-selection: #a2dcc7;
+  --text-on-accent: #33271a;
+  --vr-text-black: #292623;
+  /* Interface Colours */
+  --background-primary: #292623;
+  --background-primary-alt: #292623;
+  --background-secondary: #1f1d1c;
+  --background-secondary-alt: #121111;
+  --background-modifier-border: #36302a;
+  --background-modifier-form-field: #e3ded5;
+  --background-modifier-form-field-highlighted: #edeae4;
+  --background-modifier-success: #c2d36880;
+  --background-modifier-error: #000000;
+  --background-modifier-error-rgb: #000000;
+  --background-modifier-error-hover: #000000;
+  --background-modifier-cover: #9e989280;
+  /* Scrollbars */
+  --scrollbar-active-thumb-bg: rgba(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b), 0.5);
+  --vr-scrollbar-hover-thumb-bg: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), 0.5);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  /* Colour Palette - In order from Viridian*/
+  --vr-green: rgb(180, 186, 71);
+  /* #b4ba47 */
+  --vr-blue: rgb(104, 194, 211);
+  /* #68c2d3 */
+  --vr-violet: rgb(113, 122, 255);
+  /* #717aff */
+  --vr-purple: rgb(153, 110, 255);
+  /* #996eff */
+  --vr-pink: rgb(255, 130, 174);
+  /* #ff82ae */
+  --vr-red: rgb(255, 33, 33);
+  /* #ff212 */
+  --vr-yellow: rgb(255, 196, 0);
+  /* #ffc400 */
+  --vr-green-r: 180;
+  --vr-green-g: 186;
+  --vr-green-b: 071;
+  --vr-blue-r: 104;
+  --vr-blue-g: 194;
+  --vr-blue-b: 211;
+  --vr-violet-r: 113;
+  --vr-violet-g: 122;
+  --vr-violet-b: 255;
+  --vr-purple-r: 153;
+  --vr-purple-g: 110;
+  --vr-purple-b: 255;
+  --vr-pink-r: 255;
+  --vr-pink-g: 130;
+  --vr-pink-b: 174;
+  --vr-red-r: 255;
+  --vr-red-g: 033;
+  --vr-red-b: 033;
+  --vr-yellow-r: 255;
+  --vr-yellow-g: 196;
+  --vr-yellow-b: 000;
+  /* Highlighter Colours */
+  --vr-highlight-colour-1: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-2: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-3: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-4: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-5: rgba(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-6: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-7: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-8: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-highlighter-alpha));
+  /* Header Background Colours */
+  --vr-header-bg-colour-1: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-2: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-3: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-4: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-5: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-6: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+}
+
+/* --- THEME LIGHT --- 
+- Viridian/Adagio Light
+- by mulfok
+- mulfok#6931 on Discord
+- https://mulfok.neocities.org/
+*/
+.theme-light {
+  /* Accent Colours */
+  --vr-accent-r: 75;
+  --vr-accent-g: 100;
+  --vr-accent-b: 68;
+  --vr-accent-hover-r: 64;
+  --vr-accent-hover-g: 130;
+  --vr-accent-hover-b: 109;
+  --text-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b));
+  /* #4b6444 */
+  --text-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b));
+  /* #40826d */
+  --interactive-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b));
+  /* #4b6444 */
+  --interactive-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b));
+  /* #40826d */
+  /* Text Colours */
+  --text-normal: #33271a;
+  --text-muted: #474032;
+  --text-muted-rgb: rgb(40, 29, 27);
+  --text-faint: #9e9892;
+  --text-error: #b45252;
+  --text-error-hover: #e3624b;
+  --text-highlight-bg: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+  --text-highlight-bg-active: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+  --text-selection: #a2dcc7;
+  --text-on-accent: #33271a;
+  --vr-text-black: #33271a;
+  /* Interface Colours */
+  --background-primary: #f5f4f2;
+  --background-primary-alt: #f0eeeb;
+  --background-secondary: #edeae4;
+  --background-secondary-alt: #e3ded5;
+  --background-modifier-border: #ded6cc;
+  --background-modifier-form-field: #e3ded5;
+  --background-modifier-form-field-highlighted: #edeae4;
+  --background-modifier-success: #c2d36880;
+  --background-modifier-error: #000000;
+  --background-modifier-error-rgb: #000000;
+  --background-modifier-error-hover: #000000;
+  --background-modifier-cover: #9e989280;
+  /* Scrollbars */
+  --scrollbar-active-thumb-bg: rgba(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b), 0.5);
+  --vr-scrollbar-hover-thumb-bg: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), 0.5);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  /* Colour Palette - In order from Viridian*/
+  --vr-green-r: 180;
+  --vr-green-g: 186;
+  --vr-green-b: 071;
+  --vr-blue-r: 104;
+  --vr-blue-g: 194;
+  --vr-blue-b: 211;
+  --vr-violet-r: 113;
+  --vr-violet-g: 122;
+  --vr-violet-b: 255;
+  --vr-purple-r: 153;
+  --vr-purple-g: 110;
+  --vr-purple-b: 255;
+  --vr-pink-r: 255;
+  --vr-pink-g: 130;
+  --vr-pink-b: 174;
+  --vr-red-r: 255;
+  --vr-red-g: 033;
+  --vr-red-b: 033;
+  --vr-yellow-r: 255;
+  --vr-yellow-g: 196;
+  --vr-yellow-b: 000;
+  --vr-green: rgb(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b));
+  --vr-blue: rgb(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b));
+  --vr-violet: rgb(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b));
+  --vr-purple: rgb(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b));
+  --vr-pink: rgb(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b));
+  --vr-red: rgb(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b));
+  --vr-yellow: rgb(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b));
+  /* Highlighter Colours */
+  --vr-highlight-colour-1: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-2: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-3: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-4: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-5: rgba(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-6: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-7: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-8: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-highlighter-alpha));
+  /* Header Background Colours */
+  --vr-header-bg-colour-1: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-2: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-3: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-4: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-5: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-6: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+}
+
+/* ----------
+    COLOUR SCHEMES
+---------- */
+/* --- THEME DARK --- 
+- Zenburn
+- ported by mulfok, originally by jnurmine
+- mulfok#6931 on Discord
+- https://github.com/jnurmine/Zenburn
+*/
+.vr-zenburn.theme-dark {
+  /* Accent Colours */
+  --vr-accent-r: 220;
+  --vr-accent-g: 163;
+  --vr-accent-b: 163;
+  --vr-accent-hover-r: 242;
+  --vr-accent-hover-g: 119;
+  --vr-accent-hover-b: 122;
+  --text-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b));
+  /* #4b6444 */
+  --text-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b));
+  /* #40826d */
+  --interactive-accent: rgb(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b));
+  /* #4b6444 */
+  --interactive-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b));
+  /* #40826d */
+  /* Text Colours */
+  --text-normal: #dcdccc;
+  --text-muted: #8f8f8f;
+  --text-muted-rgb: rgb(143, 143, 143);
+  --text-faint: #9e9892;
+  --text-error: #b45252;
+  --text-error-hover: #e3624b;
+  --text-highlight-bg: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+  --text-highlight-bg-active: rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.5);
+  --text-selection: #a2dcc7;
+  --text-on-accent: #9e9892;
+  --vr-text-black: #3f3f3f;
+  /* Interface Colours */
+  --background-primary: #3f3f3f;
+  --background-primary-alt: #3c3c3c;
+  --background-secondary: #3a3a3a;
+  --background-secondary-alt: #353535;
+  --background-modifier-border: #606060;
+  --background-modifier-form-field: #262626;
+  --background-modifier-form-field-highlighted: #363636;
+  --background-modifier-success: #c2d36880;
+  --background-modifier-error: #000000;
+  --background-modifier-error-rgb: #000000;
+  --background-modifier-error-hover: #000000;
+  --background-modifier-cover: #9e989280;
+  /* Scrollbars */
+  --scrollbar-active-thumb-bg: rgba(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b), 0.5);
+  --vr-scrollbar-hover-thumb-bg: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), 0.5);
+  --scrollbar-bg: rgba(0, 0, 0, 0.05);
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.1);
+  /* Colour Palette - In order from Viridian*/
+  --vr-green-r: 180;
+  --vr-green-g: 186;
+  --vr-green-b: 071;
+  --vr-blue-r: 104;
+  --vr-blue-g: 194;
+  --vr-blue-b: 211;
+  --vr-violet-r: 113;
+  --vr-violet-g: 122;
+  --vr-violet-b: 255;
+  --vr-purple-r: 192;
+  --vr-purple-g: 190;
+  --vr-purple-b: 209;
+  --vr-pink-r: 255;
+  --vr-pink-g: 130;
+  --vr-pink-b: 174;
+  --vr-red-r: 255;
+  --vr-red-g: 033;
+  --vr-red-b: 033;
+  --vr-yellow-r: 255;
+  --vr-yellow-g: 196;
+  --vr-yellow-b: 000;
+  --vr-green: rgb(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b));
+  --vr-blue: rgb(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b));
+  --vr-violet: rgb(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b));
+  --vr-purple: rgb(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b));
+  --vr-pink: rgb(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b));
+  --vr-red: rgb(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b));
+  --vr-yellow: rgb(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b));
+  /* Highlighter Colours */
+  --vr-highlight-colour-1: rgba(var(--vr-yellow-r), var(--vr-yellow-g), var(--vr-yellow-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-2: rgba(var(--vr-red-r), var(--vr-red-g), var(--vr-red-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-3: rgba(var(--vr-pink-r), var(--vr-pink-g), var(--vr-pink-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-4: rgba(var(--vr-blue-r), var(--vr-blue-g), var(--vr-blue-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-5: rgba(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-6: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-7: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-highlighter-alpha));
+  --vr-highlight-colour-8: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-highlighter-alpha));
+  /* Header Background Colours */
+  --vr-header-bg-colour-1: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-2: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-3: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-4: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-5: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  --vr-header-bg-colour-6: rgba(var(--vr-purple-r), var(--vr-purple-g), var(--vr-purple-b), var(--vr-header-bg-alpha));
+}
+
+/* -------------------------------------
+            OBSIDIAN
+------------------------------------- */
+/* --- FONTS --- */
+/* User Interface */
+body,
+input,
+button,
+.nav-folder-title,
+.nav-file-title,
+.view-header-title,
+.mod-settings .vertical-tab-content-container {
+  font-family: var(--vr-font-ui);
+}
+
+/* Main Body - Reading Mode */
+.markdown-preview-view,
+.popover,
+.vertical-tab-content-container,
+.workspace-leaf-content[data-type=markdown] {
+  font-family: var(--vr-font-body);
+}
+
+/* Main Body - Edit Mode */
+.markdown-source-view .cm-line {
+  font-family: var(--vr-font-editor);
+}
+
+/* Headers - Reading Mode */
+.el-h1 h1, .el-h2 h2, .el-h3 h3, .el-h4 h4, .el-h5 h5, .el-h6 h6 {
+  font-family: var(--vr-font-header);
+}
+
+.el-h1 h1 {
+  font-weight: var(--vr-h1-weight);
+  font-size: var(--vr-h1-size);
+  font-style: var(--vr-h1-style);
+}
+
+.el-h2 h2 {
+  font-weight: var(--vr-h2-weight);
+  font-size: var(--vr-h2-size);
+  font-style: var(--vr-h2-style);
+}
+
+.el-h3 h3 {
+  font-weight: var(--vr-h3-weight);
+  font-size: var(--vr-h3-size);
+  font-style: var(--vr-h3-style);
+}
+
+.el-h4 h4 {
+  font-weight: var(--vr-h4-weight);
+  font-size: var(--vr-h4-size);
+  font-style: var(--vr-h4-style);
+}
+
+.el-h5 h5 {
+  font-weight: var(--vr-h5-weight);
+  font-size: var(--vr-h5-size);
+  font-style: var(--vr-h5-style);
+}
+
+.el-h6 h6 {
+  font-weight: var(--vr-h6-weight);
+  font-size: var(--vr-h6-size);
+  font-style: var(--vr-h6-style);
+}
+
+/* Headers - Edit Mode */
+.HyperMD-header.HyperMD-header-1 {
+  font-weight: var(--vr-h1-weightEM);
+  font-size: var(--vr-h1-sizeEM);
+  font-style: var(--vr-h1-styleEM);
+}
+.HyperMD-header.HyperMD-header-2 {
+  font-weight: var(--vr-h2-weightEM);
+  font-size: var(--vr-h2-sizeEM);
+  font-style: var(--vr-h2-styleEM);
+}
+.HyperMD-header.HyperMD-header-3 {
+  font-weight: var(--vr-h3-weightEM);
+  font-size: var(--vr-h3-sizeEM);
+  font-style: var(--vr-h3-styleEM);
+}
+.HyperMD-header.HyperMD-header-4 {
+  font-weight: var(--vr-h4-weightEM);
+  font-size: var(--vr-h4-sizeEM);
+  font-style: var(--vr-h4-styleEM);
+}
+.HyperMD-header.HyperMD-header-5 {
+  font-weight: var(--vr-h5-weightEM);
+  font-size: var(--vr-h5-sizeEM);
+  font-style: var(--vr-h5-styleEM);
+}
+.HyperMD-header.HyperMD-header-6 {
+  font-weight: var(--vr-h6-weightEM);
+  font-size: var(--vr-h6-sizeEM);
+  font-style: var(--vr-h6-styleEM);
+}
+.HyperMD-header .cm-header {
+  font-family: var(--vr-font-headerEM);
+  color: var(--text-normal);
+}
+
+/* Monospace Fonts */
+code[class*=language-],
+.markdown-rendered code,
+.cm-inline-code,
+.cm-hmd-codeblock,
+.cm-hmd-frontmatter,
+.HyperMD-table-2,
+.cm-math {
+  font-family: var(--vr-font-monospace) !important;
+}
+
+/* --- CODEBLOCKS --- */
+pre[class*=language-] {
+  padding: 0px;
+  background: none !important;
+}
+
+code[class*=language-] {
+  background-color: var(--background-secondary) !important;
+}
+
+/* --- SIDEBAR --- */
+/* Sidebar Buttons */
+.side-dock-ribbon-action {
+  padding-top: var(--vr-sidebar-padding);
+  padding-bottom: var(--vr-sidebar-padding);
+}
+
+.mod-left .workspace-ribbon-collapse-btn {
+  margin: 0;
+  padding: 20px 6px 15px;
+}
+
+/* Navigation Header */
+.nav-buttons-container {
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-action-button {
+  margin: 0px;
+  padding: 0px var(--vr-sidebar-nav-padding);
+}
+
+.nav-header {
+  padding: 8px 5px 2px;
+  border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+}
+
+.nav-folder.mod-root > .nav-folder-title[data-path="/"] {
+  /* TODO: Fix up this styling, I'm not a fan */
+  color: var(--text-muted);
+  font-size: 12px;
+  background: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  margin: 4px 0px;
+  z-index: 2;
+  border-radius: var(--vr-border-radius-normal);
+}
+
+/* Workspace Tab Navigation */
+.workspace-tabs {
+  padding-right: 0;
+  border-left: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+  border-right: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+  background: var(--background-secondary);
+}
+
+.workspace-split.mod-left-split .workspace-tab-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 40px;
+}
+.workspace-split.mod-right-split .workspace-tab-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  min-height: 40px;
+}
+
+.workspace-tab-header-container {
+  min-height: unset !important;
+  padding: 0px;
+  margin: 5px 0px 0px 0px;
+  border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+  background-color: var(--background-secondary);
+}
+
+.workspace-tab-header {
+  width: 24px;
+  height: 24px;
+  padding: var(--vr-workspace-tab-padding);
+  margin: 0px;
+}
+.workspace-tab-header .workspace-tab-header-inner-icon svg {
+  height: 16px;
+  width: 16px;
+  vertical-align: 1px;
+  position: relative;
+  left: 1px;
+}
+
+.workspace-tab-header-inner {
+  background: transparent !important;
+  padding: 0px;
+}
+
+/* Stop colour change on collapse
+NOTE:
+    I just did this since I didn't like how
+the colour changed on the ribbon when
+collapsing it. This is purely preferential,
+and I may add a sytle setting to toggle this
+in the future. */
+.workspace-ribbon.is-collapsed {
+  background-color: var(--background-secondary-alt);
+}
+
+/* Floating Collapse Buttons */
+.side-dock-ribbon.mod-right {
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 36px 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  opacity: 0.5;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--vr-border-radius-normal);
+  transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+}
+.side-dock-ribbon.mod-right:hover {
+  opacity: 1;
+}
+.side-dock-ribbon.mod-right .workspace-ribbon-collapse-btn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 9px 0px;
+}
+
+/* --- CALLOUTS --- */
+.callout {
+  /* General Styling */
+  border: 0px;
+  /* Roundness */
+  /* Colouring & Icons */
+}
+.callout .callout-title {
+  padding: var(--vr-callout-padding) 10px;
+  border-top-left-radius: var(--vr-border-radius-normal);
+  border-top-right-radius: var(--vr-border-radius-normal);
+  transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
+  gap: 5px;
+  /* Layout */
+}
+.callout .callout-title .callout-fold {
+  order: 1;
+  padding-top: 2px;
+  height: 16px;
+  color: rgb(var(--callout-color));
+}
+.callout .callout-title .callout-title-inner {
+  order: 2;
+  color: rgb(var(--callout-color));
+}
+.callout .callout-title .callout-icon {
+  order: 3;
+}
+.callout .is-collapsed .callout-title {
+  border-radius: var(--vr-border-radius-normal);
+}
+.callout .is-collapsed .callout-content {
+  opacity: 0 !important;
+}
+.callout[data-callout=abstract],
+.callout [data-callout=summary],
+.callout [data-callout=tldr] {
+  --callout-color: 50, 35, 145;
+}
+.callout[data-callout=metadata] {
+  --callout-color: var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b) !important;
+  --callout-icon: coffee !important;
+}
+
+.callout, .is-collapsed .callout-title {
+  border: 0px;
+  border-radius: var(--vr-border-radius-normal);
+}
+
+/* --- TABLES --- */
+/* Normal Tables */
+th {
+  background-color: var(--background-secondary);
+}
+
+/* Dataview Tables */
+.table-view-table {
+  border-collapse: collapse !important;
+  border: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-th {
+  font-size: var(--vr-font-size-normal);
+  border-width: 0px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  border-right: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-tbody {
+  border-width: 0px;
+}
+.table-view-table .table-view-tbody tr {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.table-view-table .table-view-tbody td {
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+/* --- TITLEBAR --- */
+/* Buttons - Minimise, Maximise, Close */
+.theme-dark .titlebar-button.mod-minimize:hover, .theme-light .titlebar-button.mod-minimize:hover {
+  background-color: var(--vr-green);
+}
+.theme-dark .titlebar-button.mod-maximize:hover, .theme-light .titlebar-button.mod-maximize:hover {
+  background-color: var(--vr-yellow);
+}
+.theme-dark .titlebar-button.mod-close:hover, .theme-light .titlebar-button.mod-close:hover {
+  background-color: var(--vr-red);
+}
+
+.titlebar {
+  background: var(--background-secondary-alt);
+}
+
+.titlebar-text {
+  display: none;
+}
+
+/* --- STATUSBAR --- */
+.status-bar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: var(--vr-border-radius-normal);
+  border: 1px solid var(--background-modifier-border);
+  justify-content: flex-end;
+  align-items: center;
+  max-height: unset;
+  padding: 0px 5px;
+}
+
+.status-bar-item {
+  padding: 4px var(--vr-statusbar-item-padding);
+  /* Item separators */
+}
+.status-bar-item:not(:first-child):not(.separator)::before {
+  content: "∙";
+  color: var(--text-faint);
+  font-weight: 800;
+  position: relative;
+  right: 6px;
+}
+
+/* Remove vault statistics margin
+NOTE:
+    I'm unsure why there's even a margin
+to begin with. If there's a reason and
+you actually know it, please let me know.
+*/
+.obsidian-vault-statistics--item {
+  margin-left: 0 !important;
+}
+
+/* --- HORIZONTAL RULES --- */
+.markdown-preview-view hr::after {
+  content: var(--vr-hr-sym);
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform-origin: 50% 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background-color: var(--background-primary);
+  color: var(--text-accent);
+  font-size: 16px;
+  padding: 8px 8px var(--vr-hr-padding);
+}
+
+/* --- LINKS --- */
+.internal-link, .external-link, .tag {
+  font-feature-settings: "smcp";
+  text-decoration: none !important;
+}
+
+.external-link {
+  color: var(--vr-blue);
+}
+
+cite {
+  font-feature-settings: "smcp";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Stop footnotes affecting line height */
+.footnote-ref {
+  vertical-align: top;
+  top: -0.3em;
+}
+
+/* --- MODALS --- */
+.modal.mod-settings .vertical-tab-content-container {
+  padding-bottom: 0px;
+}
+
+/* --- PANES --- */
+.workspace-leaf .view-header {
+  border-bottom: none !important;
+  /*box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.15) inset;*/
+}
+.workspace-leaf .view-header .view-header-title {
+  color: var(--text-faint);
+}
+.workspace-leaf.mod-active .view-header {
+  border-bottom: none;
+}
+.workspace-leaf.mod-active .view-header .view-header-title {
+  color: var(--text-normal);
+}
+
+/* Less intrusive sliding panes box shadow */
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.workspace-leaf {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Resize Handles */
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle, .workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: 1px;
+  height: 105%;
+  top: -24px;
+  background: transparent;
+  transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+}
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle:hover, .workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover, .workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover {
+  width: 4px;
+  background: var(--text-accent);
+  transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+}
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle:active, .workspace-split.mod-left-split > .workspace-leaf-resize-handle:active, .workspace-split.mod-right-split > .workspace-leaf-resize-handle:active {
+  width: 5px;
+  background: var(--text-accent-hover);
+  transition: var(--vr-duration-normal) var(--vr-animation-smooth);
+}
+
+/* --- SCROLLBARS --- */
+body:not(.native-scrollbars) ::-webkit-scrollbar, body:not(.native-scrollbars) .graph-controls::-webkit-scrollbar {
+  width: var(--vr-scrollbar-thickness);
+  height: var(--vr-scrollbar-thickness);
+  background: var(--background-primary);
+}
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb {
+  border: 2px solid var(--background-primary);
+}
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:hover {
+  border-width: 1px;
+  background: var(--vr-scrollbar-hover-thumb-bg);
+}
+body:not(.native-scrollbars) ::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-active-thumb-bg);
+}
+body:not(.native-scrollbars) .workspace-tabs ::-webkit-scrollbar, body:not(.native-scrollbars) .workspace-tabs .graph-controls::-webkit-scrollbar {
+  background: var(--background-secondary);
+}
+body:not(.native-scrollbars) .workspace-tabs ::-webkit-scrollbar-thumb {
+  border: 2px solid var(--background-secondary);
+}
+body:not(.native-scrollbars) .workspace-tabs ::-webkit-scrollbar-thumb:hover {
+  border-width: 1px;
+}
+body:not(.native-scrollbars) .mod-settings .vertical-tabs-container ::-webkit-scrollbar, body:not(.native-scrollbars) .mod-settings .vertical-tabs-container .graph-controls::-webkit-scrollbar {
+  background: var(--background-secondary-alt);
+}
+body:not(.native-scrollbars) .mod-settings .vertical-tabs-container ::-webkit-scrollbar-thumb {
+  border: 2px solid var(--background-secondary-alt);
+}
+body:not(.native-scrollbars) .mod-settings .vertical-tabs-container ::-webkit-scrollbar-thumb:hover {
+  border-width: 1px;
+}
+body:not(.native-scrollbars) .mod-settings .vertical-tab-content-container ::-webkit-scrollbar, body:not(.native-scrollbars) .mod-settings .vertical-tab-content-container .graph-controls::-webkit-scrollbar {
+  background: var(--background-secondary);
+}
+body:not(.native-scrollbars) .mod-settings .vertical-tab-content-container ::-webkit-scrollbar-thumb {
+  border: 2px solid var(--background-secondary);
+}
+body:not(.native-scrollbars) .mod-settings .vertical-tab-content-container ::-webkit-scrollbar-thumb:hover {
+  border-width: 1px;
+}
+
+/* --- BLOCKQUOTES --- */
+.el-blockquote blockquote {
+  background: var(--background-secondary);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- SEARCH AND REPLACE --- */
+.cm-s-obsidian span.obsidian-search-match-highlight,
+.markdown-preview-view .search-highlight.search-highlight div.is-active,
+.is-flashing.is-flashing {
+  color: var(--text-normal);
+  background: rgba(var(--vr-violet-r), var(--vr-violet-g), var(--vr-violet-b), var(--vr-highlighter-alpha));
+  border-radius: var(--vr-border-radius-small);
+}
+
+/* --- QUICK SWITCHER --- */
+/* --- COMMAND PALETTE --- */
+/* Minify instruction text */
+.prompt-instructions {
+  padding: 0px;
+  text-align: right;
+}
+
+input.prompt-input {
+  border-width: var(--vr-border-width-normal);
+}
+
+/* Commands */
+.suggestion-item {
+  padding: 10px 30px;
+  /* Alternating Row Colour */
+  /* Suggestion prefix under command name */
+}
+.suggestion-item:nth-child(odd):not(:hover) {
+  background: var(--background-primary-alt);
+}
+.suggestion-item .suggestion-content {
+  /*order: 1;*/
+  padding-bottom: 2px;
+  font-size: var(--vr-font-size-normal);
+  line-height: 1em;
+}
+.suggestion-item .suggestion-prefix {
+  display: block;
+  font-weight: 1000;
+  font-size: var(--vr-font-size-small);
+  font-style: italic;
+  line-height: 1em;
+  /*order: 2;*/
+  color: var(--text-faint);
+  /* Remove colon */
+}
+.suggestion-item .suggestion-prefix::after {
+  content: none;
+}
+.suggestion-item .suggestion-hotkey {
+  /*order: 3;*/
+  margin-left: auto;
+  border: var(--vr-border-width-normal) solid var(--interactive-accent);
+}
+.suggestion-item .suggestion-highlight {
+  background: var(--vr-highlight-colour-1);
+  color: var(--text-normal);
+}
+
+/* -------------------------------------
+            FEATURES
+------------------------------------- */
+/* --- HEADER BACKGROUNDS --- */
+/* Preview Mode */
+.markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4, .markdown-preview-view h5, .markdown-preview-view h6 {
+  border-radius: var(--vr-border-radius-normal);
+  padding-left: var(--vr-header-hori-padding);
+  position: relative;
+  overflow: hidden;
+  /* This maaaaay be a little busted */
+  color: var(--text-accent);
+  z-index: 0;
+  /* Header Background Text */
+}
+.markdown-preview-view h1::before, .markdown-preview-view h2::before, .markdown-preview-view h3::before, .markdown-preview-view h4::before, .markdown-preview-view h5::before, .markdown-preview-view h6::before {
+  content: var(--vr-header-sym);
+  font-size: 2em;
+  opacity: 0.2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  color: var(--text-normal);
+  z-index: -1;
+}
+.markdown-preview-view h1 {
+  background-color: var(--vr-header-bg-colour-1);
+}
+.markdown-preview-view h2 {
+  background-color: var(--vr-header-bg-colour-2);
+}
+.markdown-preview-view h3 {
+  background-color: var(--vr-header-bg-colour-3);
+}
+.markdown-preview-view h4 {
+  background-color: var(--vr-header-bg-colour-4);
+}
+.markdown-preview-view h5 {
+  background-color: var(--vr-header-bg-colour-5);
+}
+.markdown-preview-view h6 {
+  background-color: var(--vr-header-bg-colour-6);
+}
+
+/* Edit Mode */
+.cm-s-obsidian .HyperMD-header {
+  padding-bottom: 0px;
+  margin-bottom: 2px !important;
+  border-radius: var(--vr-border-radius-normal);
+}
+.cm-s-obsidian .HyperMD-header.HyperMD-header-1 {
+  background-color: var(--vr-header-bg-colour-1);
+}
+.cm-s-obsidian .HyperMD-header.HyperMD-header-2 {
+  background-color: var(--vr-header-bg-colour-2);
+}
+.cm-s-obsidian .HyperMD-header.HyperMD-header-3 {
+  background-color: var(--vr-header-bg-colour-3);
+}
+.cm-s-obsidian .HyperMD-header.HyperMD-header-4 {
+  background-color: var(--vr-header-bg-colour-4);
+}
+.cm-s-obsidian .HyperMD-header.HyperMD-header-5 {
+  background-color: var(--vr-header-bg-colour-5);
+}
+.cm-s-obsidian .HyperMD-header.HyperMD-header-6 {
+  background-color: var(--vr-header-bg-colour-6);
+}
+.cm-s-obsidian .HyperMD-header .cm-header {
+  color: var(--text-accent);
+}
+
+/* --- TYPOGRAPHY --- */
+/* Body Line Height */
+body p, body li {
+  line-height: var(--vr-line-height);
+}
+
+/* --- ROUNDNESS --- */
+.markdown-rendered blockquote,
+img[src]:not(.banner-image),
+aside,
+button,
+.mod-empty,
+code[class*=language-],
+.modal,
+.prompt,
+input {
+  border-radius: var(--vr-border-radius-normal) !important;
+}
+
+/* Rounded Tables
+
+NOTE: 
+    This is a really, REALLY weird bodge.
+You can't apply a border radius to a border
+that's been collapsed, so I got rid of the
+spacing and it seemed to work.
+
+    If you are much more experienced with
+CSS than myself, feel free to try and fix
+this thing up.
+*/
+table:not(.table-view-table) {
+  /* Disabled for Dataview Tables right now. */
+  border-collapse: separate !important;
+  border-spacing: 0;
+  /* Top-Left Radius */
+  /* Top-Right Radius */
+  /* Bottom-Left Radius */
+  /* Bottom-Right Radius */
+}
+table:not(.table-view-table) tr:first-child th:first-child {
+  border-top-left-radius: var(--vr-border-radius-normal);
+}
+table:not(.table-view-table) tr:first-child th:last-child {
+  border-top-right-radius: var(--vr-border-radius-normal);
+}
+table:not(.table-view-table) tr:last-child td:first-child {
+  border-bottom-left-radius: var(--vr-border-radius-normal);
+}
+table:not(.table-view-table) tr:last-child td:last-child {
+  border-bottom-right-radius: var(--vr-border-radius-normal);
+}
+
+/* --- ASIDE STYLING --- */
+aside {
+  display: block;
+  float: right;
+  width: 50%;
+  border: 1px solid var(--background-modifier-border);
+  border-left-width: 5px;
+  background: var(--background-secondary);
+  padding: 10px 20px;
+  margin: 5px 0px 5px 10px;
+}
+
+/* --- CLEAN EMBED --- */
+.markdown-embed {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+.markdown-embed-content > .markdown-preview-view {
+  max-height: unset;
+  padding: 0px;
+}
+.markdown-embed-title, .markdown-embed-link, .markdown-embed-page::-webkit-scrollbar, .markdown-embed .show-indentation-guide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Shrink space taken by "not created" messages */
+.file-embed.mod-empty {
+  padding: 5px 10px;
+  margin: 0px;
+}
+
+/* --- HIGHLIGHTS --- */
+/* TODO:
+    Figure out how to remove background
+styling of code highlights for parents. */
+/* Preview View */
+.markdown-preview-view {
+  /* Standard Styling */
+}
+.markdown-preview-view mark {
+  background: var(--vr-highlight-colour-1);
+  color: var(--vr-text-black);
+  font-style: normal;
+  font-weight: normal;
+  /* Unify styling for colours > 4 */
+}
+.markdown-preview-view mark > code {
+  font-family: var(--vr-font-body) !important;
+  font-size: 1em;
+  border-radius: 0;
+  padding: 0px;
+  color: var(--vr-text-black);
+  background: var(--vr-highlight-colour-5);
+}
+.markdown-preview-view em > mark {
+  background: var(--vr-highlight-colour-2);
+}
+.markdown-preview-view em > mark > code {
+  background: var(--vr-highlight-colour-6);
+}
+.markdown-preview-view strong > mark {
+  background: var(--vr-highlight-colour-3);
+}
+.markdown-preview-view strong > mark > code {
+  background: var(--vr-highlight-colour-7);
+}
+.markdown-preview-view strong > em > mark {
+  background: var(--vr-highlight-colour-4);
+}
+.markdown-preview-view strong > em > mark > code {
+  background: var(--vr-highlight-colour-8);
+}
+
+/* Edit View
+NOTE:
+    The code for edit view highlights is
+absolutely repulsive. I plan to *try* and
+clean it up at a later date, but if you
+want to do that for me before then, feel
+free. */
+.cm-s-obsidian {
+  /* Standard Styling */
+}
+.cm-s-obsidian .cm-highlight {
+  background: var(--vr-highlight-colour-1) !important;
+  color: var(--vr-text-black);
+  font-style: normal;
+  font-weight: normal;
+  /* Unify styling for colours > 4 */
+}
+.cm-s-obsidian .cm-highlight.cm-strong {
+  background: var(--vr-highlight-colour-3) !important;
+}
+.cm-s-obsidian .cm-highlight.cm-inline-code {
+  font-family: var(--vr-font-editor) !important;
+  font-size: 1em;
+  border-radius: 0;
+  padding: 0px;
+  color: var(--vr-text-black);
+  background: var(--vr-highlight-colour-5) !important;
+}
+.cm-s-obsidian .cm-highlight.cm-inline-code.cm-strong {
+  background: var(--vr-highlight-colour-7) !important;
+}
+.cm-s-obsidian .cm-em.cm-highlight {
+  background: var(--vr-highlight-colour-2) !important;
+}
+.cm-s-obsidian .cm-em.cm-highlight.cm-strong {
+  background: var(--vr-highlight-colour-4) !important;
+}
+.cm-s-obsidian .cm-em.cm-highlight.cm-inline-code {
+  background: var(--vr-highlight-colour-6) !important;
+}
+.cm-s-obsidian .cm-em.cm-highlight.cm-inline-code.cm-strong {
+  background: var(--vr-highlight-colour-8) !important;
+}
+
+/* -------------------------------------
+            PLUGINS
+------------------------------------- */
+/* --- STYLE SETTINGS --- */
+/* @settings
+name: Core
+id: vr-core
+settings:
+	-
+		id: vr-scheme-light
+		title: "Colour Scheme (Light Mode)"
+		description: "The colours used in the Light Mode interface."
+		type: class-select
+		default: vr-colour-light-none
+		options:
+			-
+				label: "Default"
+				value: vr-colour-light-none
+	-
+		id: vr-scheme-dark
+		title: "Colour Scheme (Dark Mode)"
+		description: "The colours used in the Dark Mode interface."
+		type: class-select
+		default: vr-colour-dark-none
+		options:
+			-
+				label: "Default"
+				value: vr-colour-dark-none
+			-
+				label: "👽 Zenburn 🥗"
+				value: vr-zenburn
+*/
+/* @settings
+name: Editor
+id: viridian-editor
+settings:
+    -
+		id: vr-fonts
+		title: Typefaces
+		type: heading
+		level: 1
+		collapsed: true
+*/
+/** -- == === === === === == --
+        VIRIDIAN v0.0.1
+            by mulfok
+-- == === === === === == -- **/

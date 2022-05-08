@@ -1,9 +1,0 @@
-/* --- BLOCKQUOTES --- */
-.el-blockquote blockquote {
-  background: var(--background-secondary);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*# sourceMappingURL=blockquotes.css.map */
