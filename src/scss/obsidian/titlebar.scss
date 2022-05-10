@@ -8,5 +8,9 @@
     }
 }
 
-.titlebar { background: var(--background-secondary-alt); }
+.titlebar {
+    border-bottom: var(--vr-border-width-normal) solid var(--background-modifier-border);
+}
+
+
 .titlebar-text { display: none; }

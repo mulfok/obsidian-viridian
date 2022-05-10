@@ -1,5 +1,4 @@
 /* --- SIDEBAR --- */
-
 /* Sidebar Buttons */
 .side-dock-ribbon-action {
     padding-top: var(--vr-sidebar-padding);
@@ -83,6 +82,10 @@
 
         position: relative;
         left: 1px;
+    }
+
+    &.is-active {
+        color: var(--text-accent);
     }
 }
 

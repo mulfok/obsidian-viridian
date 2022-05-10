@@ -3,7 +3,7 @@
     & .view-header {
         border-bottom: none !important;
         /*box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.15) inset;*/
-        
+
         & .view-header-title {
             color: var(--text-faint);
         }
@@ -20,11 +20,23 @@
 
 /* Less intrusive sliding panes box shadow */
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.workspace-leaf {
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: none;
+    /*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);*/
+
+    border-left: var(--vr-border-width-normal) solid var(--background-modifier-border);
+    border-right: var(--vr-border-width-normal) solid var(--background-modifier-border);
 }
 
 /* Resize Handles */
 .workspace-split {
+    
+    &.mod-vertical > .workspace-leaf {
+        padding-right: 0px;
+
+        border-left: var(--vr-border-width-normal) solid var(--background-modifier-border);
+        border-right: var(--vr-border-width-normal) solid var(--background-modifier-border);
+    }
+
     &.mod-vertical > * > .workspace-leaf-resize-handle,
     &.mod-left-split > .workspace-leaf-resize-handle,
     &.mod-right-split > .workspace-leaf-resize-handle {
@@ -46,4 +58,9 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.work
             transition: var(--vr-duration-normal) var(--vr-animation-smooth);
         }
     }
+}
+
+/* No border radius on the file header */
+.workspace-leaf {
+    border-radius: 0px;
 }

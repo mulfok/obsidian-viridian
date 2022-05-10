@@ -25,7 +25,7 @@
         & .callout-title-inner {
             order: 2;
 
-            color: rgb(var(--callout-color));
+            color: var(--text-normal);
         }
         
         & .callout-icon {
@@ -45,15 +45,35 @@
     }
 
     /* Colouring & Icons */
-    &[data-callout="abstract"],
-    [data-callout="summary"],
-    [data-callout="tldr"] {
-        --callout-color: 50, 35, 145;
+    &[data-callout="metadata"] {
+        --callout-color: var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b);
+        --callout-icon: coffee;
     }
 
-    &[data-callout="metadata"] {
-        --callout-color: var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b) !important;
-        --callout-icon: coffee !important;
+    &[data-callout="pro"],
+    &[data-callout="do"] {
+        --callout-color: 156, 219, 67;
+        --callout-icon: thumbs-up;
+    }
+
+    &[data-callout="con"],
+    &[data-callout="don't"] {
+        --callout-color: 223, 62, 35;
+        --callout-icon: thumbs-down;
+    }
+
+    &[data-callout="spell"] {
+        --callout-color: 140, 49, 123;
+        --callout-icon: wand;
+    }
+
+    &[data-callout="weapon"] {
+        --callout-color: 115, 107, 159;
+        --callout-icon: axe;
+    }
+
+    &[data-callout="encounter"] {
+        --callout-icon: shield;
     }
 }
 

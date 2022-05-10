@@ -36,6 +36,7 @@
 @import "obsidian/search-replace";
 @import "obsidian/quickswitcher";
 @import "obsidian/commandpalette";
+@import "obsidian/interface";
 
 /* -------------------------------------
             FEATURES
@@ -46,10 +47,11 @@
 @import "features/aside";
 @import "features/clean-embed";
 @import "features/highlights";
+@import "features/custom-icons";
 
 /* -------------------------------------
             PLUGINS
 ------------------------------------- */
 @import "plugins/style_settings";
 
-@import "abstracts/_version";
+@import "abstracts/_footer";
