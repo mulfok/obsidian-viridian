@@ -62,7 +62,8 @@
 .workspace-tab-header-container {
     min-height: unset !important;
     padding: 0px;
-    margin: 5px 0px 0px 0px;
+    padding-top: 1px;
+    margin: 5px -14px 0px -12px;
     border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
     background-color: var(--background-secondary);
 }
