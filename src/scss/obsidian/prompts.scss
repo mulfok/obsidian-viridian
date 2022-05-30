@@ -1,4 +1,9 @@
-/* --- COMMAND PALETTE --- */
+/* --- PROMPTS --- */
+
+.prompt {
+    border: var(--vr-border-width-normal) solid var(--background-modifier-border);
+    padding: 0px;
+}
 
 /* Minify instruction text */
 .prompt-instructions {
@@ -8,15 +13,28 @@
 }
 
 input.prompt-input {
-    border-width: var(--vr-border-width-normal);
+    border-width: 0px;
+    border-bottom: var(--vr-border-width-normal) solid var(--background-modifier-border);
+
+    border-radius: 0px !important;
+    border-top-left-radius: var(--vr-border-radius-normal) !important;
+    border-top-right-radius: var(--vr-border-radius-normal) !important;
+
+    background: transparent;
+
+    height: 40px;
+}
+
+.prompt-results {
+    padding-top: 0px;
 }
 
 /* Commands */
 .suggestion-item {
-    padding: 10px 30px;
+    padding: 5px 30px;
 
     /* Alternating Row Colour */
-    &:nth-child(odd):not(:hover) {
+    &:nth-child(even):not(:hover) {
         background: var(--background-primary-alt);
     }
 

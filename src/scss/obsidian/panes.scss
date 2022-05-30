@@ -2,7 +2,9 @@
 .workspace-leaf {
     & .view-header {
         border-bottom: none !important;
-        /*box-shadow: 0px -2px 0px 0px rgba(100, 100, 100, 0.15) inset;*/
+        border-top: none !important;
+
+        border-radius: 0px !important;
 
         & .view-header-title {
             color: var(--text-faint);
@@ -29,6 +31,9 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.work
 
 /* Resize Handles */
 .workspace-split {
+    &.mod-root {
+        background-color: transparent;
+    }
     
     &.mod-vertical > .workspace-leaf {
         padding-right: 0px;

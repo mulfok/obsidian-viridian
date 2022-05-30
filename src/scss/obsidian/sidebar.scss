@@ -19,19 +19,6 @@
     border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
 }
 
-.nav-folder.mod-root > .nav-folder-title[data-path="/"] {
-    /* TODO: Fix up this styling, I'm not a fan */
-    color: var(--text-muted);
-    font-size: 12px;
-    background: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
-    top: 0;
-    width: 100%;
-    justify-content: center;
-    margin: 4px 0px;
-    z-index: 2;
-    border-radius: var(--vr-border-radius-normal);
-}
-
 /* Workspace Tab Navigation */
 .workspace-tabs {
     padding-right: 0;
@@ -105,6 +92,8 @@ in the future. */
 
 .workspace-ribbon.is-collapsed {
     background-color: var(--background-secondary-alt);
+
+    border-right: none;
 }
 
 /* Floating Collapse Buttons */
@@ -142,3 +131,28 @@ in the future. */
         padding: 9px 0px;
     }
 } 
+
+/* File EXplorer */
+
+/* Vault file name */
+.nav-folder.mod-root > .nav-folder-title[data-path="/"] {
+    text-transform: uppercase;
+    color: var(--text-faint);
+
+    font-size: var(--vr-font-size-normal);
+    font-weight: bolder;
+
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.nav-folder-title, .nav-file-title {
+    height: 24px;
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: var(--vr-border-radius-normal);
+
+    &:hover { background-color: var(--background-primary-alt) !important; }
+}
