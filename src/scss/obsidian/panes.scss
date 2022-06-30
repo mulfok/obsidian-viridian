@@ -38,7 +38,7 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf.work
     &.mod-vertical > .workspace-leaf {
         padding-right: 0px;
 
-        border-left: var(--vr-border-width-normal) solid var(--background-modifier-border);
+        /*border-left: var(--vr-border-width-normal) solid var(--background-modifier-border);*/
         border-right: var(--vr-border-width-normal) solid var(--background-modifier-border);
     }
 

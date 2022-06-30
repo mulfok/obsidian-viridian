@@ -20,6 +20,10 @@
 }
 
 /* Workspace Tab Navigation */
+.mod-left-split .workspace-tabs {
+    border-left: none !important;
+}
+
 .workspace-tabs {
     padding-right: 0;
     border-left: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
@@ -90,10 +94,8 @@ collapsing it. This is purely preferential,
 and I may add a sytle setting to toggle this
 in the future. */
 
-.workspace-ribbon.is-collapsed {
-    background-color: var(--background-secondary-alt);
-
-    border-right: none;
+.workspace-ribbon.side-dock-ribbon.mod-left {
+    border: none !important;
 }
 
 /* Floating Collapse Buttons */

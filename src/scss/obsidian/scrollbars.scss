@@ -57,4 +57,17 @@ body:not(.native-scrollbars) {
             }
         }
     }
+
+    /* File Navigation */
+    & .workspace-leaf {
+        & ::-webkit-scrollbar,
+        & .graph-controls::-webkit-scrollbar {
+            background: var(--background-primary);
+        }
+
+        & ::-webkit-scrollbar-thumb {
+            border: 2px solid var(--background-primary);
+            &:hover { border-width: 1px; }
+        }
+    }
 }

@@ -21,11 +21,11 @@
     --interactive-accent-hover: rgb(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b)); /* #40826d */
 
     /* Text Colours */
-    --text-normal: #edddca;
+    --text-normal: #f7edeb;
     
-    --text-muted: #9c876b;
+    --text-muted: #f0d3c9;
     --text-muted-rgb: rgb(40, 29, 27);
-    --text-faint: #423b33;
+    --text-faint: #665957;
     
     --text-error: #b45252;
     --text-error-hover: #e3624b;
@@ -40,11 +40,11 @@
     --vr-text-black: #292623;
 
     /* Interface Colours */
-    --background-primary: #292623;
-    --background-primary-alt: #292623;
+    --background-primary: #282727;
+    --background-primary-alt: #343231;
 
-    --background-secondary: #1f1d1c;
-    --background-secondary-alt: #121111;
+    --background-secondary: #2e2d2d;
+    --background-secondary-alt: #282727;
 
     --background-modifier-border: #36302a;
 
@@ -99,4 +99,6 @@
     --vr-header-bg-colour-4: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
     --vr-header-bg-colour-5: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), var(--vr-header-bg-alpha));
     --vr-header-bg-colour-6: rgba(var(--vr-green-r), var(--vr-green-g), var(--vr-green-b), var(--vr-header-bg-alpha));
+
+    --vr-header-bg-alpha: 0.1;
 }
