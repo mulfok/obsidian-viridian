@@ -1,12 +1,16 @@
 /* --- CALLOUTS --- */
 .callout {
     /* General Styling */
-    border: 0px;
+    //border: 0px;
 
     & .callout-title {
-        padding: var(--vr-callout-padding) 10px;
-        border-top-left-radius: var(--vr-border-radius-normal);
-        border-top-right-radius: var(--vr-border-radius-normal);
+        
+        // move title stuff around
+        flex-direction: row;
+        justify-content: space-between;
+
+        border-top-left-radius: var(--callout-radius);
+        border-top-right-radius: var(--callout-radius);
 
         transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
     
@@ -24,7 +28,7 @@
 
         & .callout-title-inner {
             order: 2;
-
+            
             color: var(--text-normal);
         }
         

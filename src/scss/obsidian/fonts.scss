@@ -9,6 +9,7 @@ button,
 .view-header-title,
 .mod-settings .vertical-tab-content-container {
     font-family: var(--vr-font-ui);
+    font-weight: var(--font-medium);
 }
 
 /* Main Body - Reading Mode */
@@ -17,11 +18,13 @@ button,
 .vertical-tab-content-container,
 .workspace-leaf-content[data-type=markdown] {
     font-family: var(--vr-font-body);
+    font-weight: var(--font-medium);
 }
 
 /* Main Body - Edit Mode */
 .markdown-source-view .cm-line {
     font-family: var(--vr-font-editor);
+    font-weight: var(--font-medium);
 }
 
 /* Headers - Reading Mode */

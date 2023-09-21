@@ -4,6 +4,7 @@
 - mulfok#6931 on Discord
 - https://mulfok.neocities.org/
 */
+
 .theme-light {
     /* Accent Colours */
     --vr-accent-r: 75;
@@ -63,6 +64,8 @@
 
     --background-modifier-cover: #9e989280;
 
+    --blockquote-background-color: var(--background-secondary-alt);
+
     /* Scrollbars */
     --scrollbar-active-thumb-bg: rgba(var(--vr-accent-hover-r), var(--vr-accent-hover-g), var(--vr-accent-hover-b), 0.5);
     --vr-scrollbar-hover-thumb-bg: rgba(var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b), 0.5);
@@ -78,7 +81,7 @@
     --vr-red-r:     255; --vr-red-g:    033; --vr-red-b:    033;
     --vr-yellow-r:  255; --vr-yellow-g: 196; --vr-yellow-b: 000;
 
-    --vr-green-rgb:   180, 186, 071;
+    --vr-green-rgb:   180, 186, 071; 
     --vr-blue-rgb:    104, 194, 211;
     --vr-violet-rgb:  113, 122, 255;
     --vr-purple-rgb:  153, 110, 255;

@@ -90,11 +90,17 @@
     
     --vr-header-hori-padding: 8px;
 
-    --vr-callout-padding: 5px;
+    --vr-callout-padding: 0;
 
     --vr-statusbar-item-padding: 6px;
 
     --vr-scrollbar-thickness: 6px;
+
+    // Callouts
+    --callout-border-width: 0px;
+    --callout-border-opacity: 0;
+    --callout-padding: 0;
+    --callout-radius: var(--size-4-2);
 
     /* Animation */
     --vr-duration-normal: 200ms;
