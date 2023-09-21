@@ -1,1 +1,1 @@
-sass --watch --no-source-map ./src/scss/index.scss:Viridian.css
+sass --watch --no-source-map ./src/scss/index.scss:theme.css

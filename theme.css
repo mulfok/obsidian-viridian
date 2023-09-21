@@ -1245,7 +1245,7 @@ you actually know it, please let me know.
 
 /* --- HORIZONTAL RULES --- */
 .markdown-preview-view hr::after {
-  content: var("🎨");
+  content: var("--vr-hr-sym");
   display: inline-block;
   position: absolute;
   left: 50%;

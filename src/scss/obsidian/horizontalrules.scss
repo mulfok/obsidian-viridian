@@ -1,6 +1,6 @@
 /* --- HORIZONTAL RULES --- */
 .markdown-preview-view hr::after {
-    content: var(--vr-hr-sym);
+    content: var("--vr-hr-sym");
     display: inline-block;
 
     position: absolute;
