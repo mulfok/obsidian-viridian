@@ -23,7 +23,7 @@
             padding-top: 2px;
             height: 16px;
 
-            color: rgb(var(--callout-color));
+            color: var(--callout-color);
         }
 
         & .callout-title-inner {
@@ -56,23 +56,23 @@
 
     &[data-callout="pro"],
     &[data-callout="do"] {
-        --callout-color: 156, 219, 67;
+        --callout-color: rgb(156, 219, 67);
         --callout-icon: thumbs-up;
     }
 
     &[data-callout="con"],
     &[data-callout="don't"] {
-        --callout-color: 223, 62, 35;
+        --callout-color: rgb(223, 62, 35);
         --callout-icon: thumbs-down;
     }
 
     &[data-callout="spell"] {
-        --callout-color: 140, 49, 123;
+        --callout-color: rgb(140, 49, 123);
         --callout-icon: wand;
     }
 
     &[data-callout="weapon"] {
-        --callout-color: 115, 107, 159;
+        --callout-color: rgb(115, 107, 159);
         --callout-icon: axe;
     }
 
