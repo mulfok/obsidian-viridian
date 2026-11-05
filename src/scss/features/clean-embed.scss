@@ -19,6 +19,8 @@
     }
 }
 
+.inline-embed>.markdown-embed-content>.markdown-preview-view { padding: 0; }
+
 /* Shrink space taken by "not created" messages */
 .file-embed.mod-empty {
     padding: 5px 10px;

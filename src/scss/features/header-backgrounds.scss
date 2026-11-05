@@ -1,0 +1,42 @@
+
+/* Preview Mode */
+.el-h1 h1,
+.el-h2 h2,
+.el-h3 h3,
+.el-h4 h4,
+.el-h5 h5,
+.el-h6 h6 {
+    border-radius: var(--vr-border-radius);
+    padding-left: 2%;
+    padding-right: 2%;
+
+    position: relative; // Needed for symbols to show up
+    overflow: hidden; /* This maaaaay be a little busted */
+
+    background-color: color-mix(in oklch, var(--color-accent) 20%, transparent);
+    
+    color: var(--color-accent) !important;
+
+    z-index: 0;
+
+    //Header Background Text
+    &::before {
+        content: var(--vr-header-symbol);
+        
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 2em;
+        //color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+        color: var(--background-primary);
+
+        position: absolute;
+        bottom: var(--vr-header-symbol-offset);
+        right: 1%;
+
+        max-width: 1em;
+        max-height: 1em;
+        text-align: right;
+
+        z-index: -1;
+    }
+}

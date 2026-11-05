@@ -1,109 +1,21 @@
 :root {
-    /*
-    Remember to run `sass --watch scss:css` before any changes!
-    Note that "EM" means "Edit Mode".
-    */
+	// Fonts
+	--vr-font-header: "Fraunces";
 
-    /* --- OBSIDIAN VARIABLES --- */
-   
+	// Headers
+	--vr-header-symbol: "#"; /* § */
+	--vr-header-symbol-offset: 0.3em;
 
-    /* --- VIRIDIAN VARIABLES --- */
-    /* Fonts */
-    --vr-font-body: "Source Serif Pro", nasin-nanpa;
-    --vr-font-editor: "Source Serif Pro", nasin-nanpa;
-    --vr-font-header: "Brevia", nasin-nanpa;
-    --vr-font-monospace: "Victor Mono", nasin-nanpa;
-    --vr-font-ui: "Recursive", nasin-nanpa;
-    
-    --vr-font-headerEM: "Brevia", nasin-nanpa;
-
-    /* Font Sizes */
-    --vr-font-size-large: 20px;
-    --vr-font-size-normal: 14px;
-    --vr-font-size-small: 11px;
-
-    /* Typography */
-    --vr-line-height: 1.3em;
-
-    --vr-hr-padding: 12px;
-    --vr-hr-sym: "¶"; /* ¶ */
-
-    --vr-header-sym: "#"; /* § */
-
-    /* Headings */
     --vr-h1-weight: 800;
     --vr-h2-weight: 800;
     --vr-h3-weight: 600;
     --vr-h4-weight: 600;
     --vr-h5-weight: 500;
-    --vr-h6-weight: 400;
+    --vr-h6-weight: 500;
 
-    --vr-h1-weightEM: 800;
-    --vr-h2-weightEM: 800;
-    --vr-h3-weightEM: 600;
-    --vr-h4-weightEM: 600;
-    --vr-h5-weightEM: 500;
-    --vr-h6-weightEM: 400;
+	// Horizontal Rules
+	--vr-horizontal-rule-symbol: "§"; /* ¶ */
 
-    --vr-h1-size: 2.50em;
-    --vr-h2-size: 2.20em;
-    --vr-h3-size: 1.90em;
-    --vr-h4-size: 1.60em;
-    --vr-h5-size: 1.30em;
-    --vr-h6-size: 1.00em;
-
-    --vr-h1-sizeEM: 2.50em;
-    --vr-h2-sizeEM: 2.20em;
-    --vr-h3-sizeEM: 1.90em;
-    --vr-h4-sizeEM: 1.60em;
-    --vr-h5-sizeEM: 1.30em;
-    --vr-h6-sizeEM: 1.00em;
-
-    --vr-h1-style: normal;
-    --vr-h2-style: normal;
-    --vr-h3-style: normal;
-    --vr-h4-style: normal;
-    --vr-h5-style: normal;
-    --vr-h6-style: normal;
-
-    --vr-h1-styleEM: normal;
-    --vr-h2-styleEM: normal;
-    --vr-h3-styleEM: normal;
-    --vr-h4-styleEM: normal;
-    --vr-h5-styleEM: normal;
-    --vr-h6-styleEM: normal;
-
-    --vr-highlighter-alpha: 1;
-
-    /* Border Radii */
-    --vr-border-width-normal: 1px;
-
-    --vr-border-radius-small: 2px;
-    --vr-border-radius-normal: 8px;
-
-    /* User Interface */
-    --vr-sidebar-padding: 2px;
-    --vr-sidebar-nav-padding: 4px;
-    --vr-sidebar-border-width: 1px;
-
-    --vr-workspace-tab-padding: 2px;
-    
-    --vr-header-hori-padding: 8px;
-
-    --vr-callout-padding: 0;
-
-    --vr-statusbar-item-padding: 6px;
-
-    --vr-scrollbar-thickness: 6px;
-
-    // Callouts
-    --callout-border-width: 0px;
-    --callout-border-opacity: 0;
-    --callout-padding: 0;
-    --callout-radius: var(--size-4-2);
-
-    /* Animation */
-    --vr-duration-normal: 200ms;
-
-    --vr-animation-smooth: cubic-bezier(0.45,0.05,0.55,0.95);
+	// Appearance
+	--vr-border-radius: 8px; //0.25em; // try to look like 8px @ 20 pt font
 }

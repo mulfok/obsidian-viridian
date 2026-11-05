@@ -1,0 +1,44 @@
+// Refer to https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors
+.theme-light {
+	/* Text Colours */
+    // Let obsidian handle certain colours for default theme
+	--text-normal: #33271a;
+    
+    --text-muted: #474032;
+    --text-faint: #9e9892;
+
+    --text-on-accent: #f7edeb; // light font colour
+	--text-on-accent-inverted: #33271a; // dark font colour
+    
+    //--text-success:
+    //--text-warning:
+    //--text-error: #b45252;
+    
+    // --text-accent
+    // --text-accent-hover
+
+	//--text-highlight-bg
+    //--text-selection
+
+    /* Semantic Colours */
+    --background-primary: #f5f4f2;
+    --background-primary-alt: #f0eeeb;
+
+    --background-secondary: #edeae4;
+    --background-secondary-alt: #e3ded5;
+
+    // --background-modifier-hover
+    // --background-modifier-active-hover
+    --background-modifier-border: #ded6cc;
+    //--background-modifier-border-hover
+    //--background-modifier-border-focus
+
+    --background-modifier-error: #000000;
+    --background-modifier-error-rgb: rgb(0,0,0);
+    --background-modifier-error-hover: #000000;
+
+    --background-modifier-success: #c2d36880;
+
+    --background-modifier-message: #9e989280;
+    --background-modifier-form-field: #e3ded5;
+}

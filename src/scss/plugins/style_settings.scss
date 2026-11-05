@@ -1,7 +1,7 @@
-/* --- STYLE SETTINGS --- */
+/* --- STYLE MANAGER --- */
 
 /* @settings
-name: Core
+name: Viridian
 id: vr-core
 settings:
 	-
@@ -25,18 +25,44 @@ settings:
 				label: "Default"
 				value: vr-colour-dark-none
 			-
-				label: "👽 Zenburn 🥗"
-				value: vr-zenburn
-*/
-
-/* @settings
-name: Editor
-id: viridian-editor
-settings:
-    -
-		id: vr-fonts
-		title: Typefaces
-		type: heading
-		level: 1
-		collapsed: true
+				label: "Nord"
+				value: vr-dark-nord
+			-
+				label: "OLED"
+				value: vr-dark-oled
+	-
+		id: vr-font-header
+		title: Header Font
+		description: "The font used for markdown headers."
+		type: variable-text
+        default: Fraunces
+        quotes: false
+	-
+		id: vr-header-symbol
+		title: Header Symbol
+		description: "The symbol that shows up in the background."
+		type: variable-text
+		default: "#"
+		quotes: true
+	-
+		id: vr-header-symbol-offset
+		title: Symbol Vertical Offset
+		description: "The vertical offset of the symbol."
+		type: variable-text
+		default: 0.3em
+		quotes: false
+	-
+		id: vr-nav-labels-left
+		title: Left Navigation Labels
+		description: "Add labels to the navigation pane in the left sidebar."
+		type: class-toggle
+		default: True
+		addCommand: false
+	-
+		id: vr-nav-labels-right
+		title: Right Navigation Labels
+		description: "Add labels to the navigation pane in the right sidebar."
+		type: class-toggle
+		default: True
+		addCommand: false
 */

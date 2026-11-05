@@ -1,7 +1,14 @@
 /* --- BLOCKQUOTES --- */
-.el-blockquote blockquote {
-    background: var(--blockquote-background-color);
-    max-width: 500px;
+// Make blockquotes full width on mobile
+// Is there a way to diffrentiate between portrait and landscape?
+:not(.is-phone) .markdown-rendered blockquote { max-width: 66%; }
+
+.markdown-rendered blockquote {
+    background-color: color-mix(in oklch, var(--color-accent) 10%, transparent);
+    //max-width: 66%;
+
+    border: 1px solid var(--color-accent);
+    border-left-width: 6px;
 
     // didn't see a blockquote padding/margin variable in reference, so this is probably fine
     margin-left: auto;
@@ -9,4 +16,34 @@
 
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+    z-index: 0;
+
+    position: relative; // Needed for symbols to show up
+    overflow: hidden;
+
+    &::before {
+        content: ">";
+        display: inline;
+        
+        font-size: 3em;
+        font-weight: 400;
+        line-height: 3em;
+
+        color: var(--background-primary);
+        color: color-mix(in oklch, var(--color-accent) 50%, transparent);
+
+        position: absolute;
+        bottom: 0.75em;
+        right: 1%;
+
+        max-width: 1em;
+        max-height: 1em;
+        text-align: right;
+
+        z-index: -1;
+    }
 }

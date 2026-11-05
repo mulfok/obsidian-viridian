@@ -1,12 +1,5 @@
 /* --- CODEBLOCKS --- */
-// not really sure what any of this was supposed to achieve, so it has been deprecated for now
-/*
-pre[class*="language-"] {
-    padding: 0px;
-    background: none;
+.markdown-rendered code { // not complete, have a second look
+	color: var(--color-red);
+	background-color: var(--background-secondary);
 }
-
-code[class*="language-"] {
-    background-color: var(--background-secondary);
-}
-*/

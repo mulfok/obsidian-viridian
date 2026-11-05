@@ -1,0 +1,44 @@
+// Refer to https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors
+.vr-dark-oled.theme-dark {
+	/* Text Colours */
+    // Let obsidian handle certain colours for default theme
+	--text-normal: #ffffff;
+    
+    --text-muted: #f0d3c9;
+    --text-faint: #665957;
+
+    --text-on-accent: #ffffff;
+	--text-on-accent-inverted: #000000;
+    
+    //--text-success:
+    //--text-warning:
+    //--text-error: #b45252;
+
+    // --text-accent
+    // --text-accent-hover
+
+	//--text-highlight-bg
+    //--text-selection
+
+    /* Semantic Colours */
+    --background-primary: #000000;
+    --background-primary-alt: #000000;
+
+    --background-secondary: #000000;
+    --background-secondary-alt: #000000;
+
+    // --background-modifier-hover
+    // --background-modifier-active-hover
+    --background-modifier-border: #1a1a1a;
+    //--background-modifier-border-hover
+    //--background-modifier-border-focus
+
+    --background-modifier-error: #000000;
+    --background-modifier-error-rgb: #000000;
+    --background-modifier-error-hover: #000000;
+
+    --background-modifier-success: #c2d36880;
+
+    --background-modifier-message: #9e989280;
+    --background-modifier-form-field: #000000;
+}

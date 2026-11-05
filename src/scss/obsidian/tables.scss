@@ -1,23 +1,29 @@
 /* --- TABLES --- */
 /* Normal Tables */
-th { background-color: var(--background-secondary); }
+th {
+	border-color: var(--background-modifier-border) !important;
+	background-color: var(--background-primary-alt) !important;
+}
+
+td {
+	border-color: var(--background-modifier-border) !important;
+	background-color: var(--background-primary) !important;
+}
 
 /* Dataview Tables */
 .table-view-table {
     border-collapse: collapse !important;
-    border: 1px solid var(--background-modifier-border);
+    border: 1px solid var(--color-base-40);
 
     & .table-view-th {
-        font-size: var(--vr-font-size-normal);
-        
         border-width: 0px;
-        border-bottom: 1px solid var(--background-modifier-border);
-        border-right: 1px solid var(--background-modifier-border);
+        border-bottom: 1px solid var(--color-base-40);
+        border-right: 1px solid var(--color-base-40);
     }
 
     & .table-view-tbody {
         border-width: 0px;
-        & tr { border-bottom: 1px solid var(--background-modifier-border); }
-        & td { border-right: 1px solid var(--background-modifier-border); }
+        & tr { border-bottom: 1px solid var(--color-base-40); }
+        & td { border-right: 1px solid var(--color-base-40); }
     } 
 }

@@ -1,46 +1,52 @@
 /* --- CALLOUTS --- */
 .callout {
-    /* General Styling */
-    //border: 0px;
+	border: 1px solid var(--callout-color);
+    border-radius: var(--vr-border-radius);
 
     & .callout-title {
-        
         // move title stuff around
         flex-direction: row;
         justify-content: space-between;
 
-        border-top-left-radius: var(--callout-radius);
-        border-top-right-radius: var(--callout-radius);
+        border-top-left-radius: var(--vr-border-radius);
+        border-top-right-radius: var(--vr-border-radius);
 
-        transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
+        //transition: border-radius var(--vr-duration-normal) var(--vr-animation-smooth);
     
         gap: 5px;
 
-        /* Layout */
+        // Layout
         & .callout-fold {
             order: 1;
 
-            padding-top: 2px;
-            height: 16px;
+            padding-top: 0;
+            //max-height: 1em;
 
-            color: rgb(var(--callout-color));
+            color: var(--callout-color);
         }
 
         & .callout-title-inner {
             order: 2;
             
-            color: var(--text-normal);
+            color: var(--callout-color);
         }
         
         & .callout-icon {
             order: 3;
+			padding-right: 0.25em;
+			//max-height: 1em;
         }
+
+		& svg {
+			width: 1em !important;
+			height: 1em !important;
+		}
     }
 
-    /* Roundness */
+    // Roundness
     & .is-collapsed {
         & .callout-title {
-            border-radius: var(--vr-border-radius-normal);
+            border-radius: var(--vr-border-radius);
         }
 
         & .callout-content {
@@ -48,31 +54,31 @@
         }
     }
 
-    /* Colouring & Icons */
+    // Colouring & Icons
     &[data-callout="metadata"] {
-        --callout-color: var(--vr-accent-r), var(--vr-accent-g), var(--vr-accent-b);
+        --callout-color: var(--color-accent);
         --callout-icon: coffee;
     }
 
     &[data-callout="pro"],
     &[data-callout="do"] {
-        --callout-color: 156, 219, 67;
+        --callout-color: rgb(156, 219, 67);
         --callout-icon: thumbs-up;
     }
 
     &[data-callout="con"],
     &[data-callout="don't"] {
-        --callout-color: 223, 62, 35;
+        --callout-color: rgb(223, 62, 35);
         --callout-icon: thumbs-down;
     }
 
     &[data-callout="spell"] {
-        --callout-color: 140, 49, 123;
+        --callout-color: rgb(140, 49, 123);
         --callout-icon: wand;
     }
 
     &[data-callout="weapon"] {
-        --callout-color: 115, 107, 159;
+        --callout-color: rgb(115, 107, 159);
         --callout-icon: axe;
     }
 
@@ -81,7 +87,12 @@
     }
 }
 
-.callout, .is-collapsed .callout-title {
-    border: 0px;
-    border-radius: var(--vr-border-radius-normal);
+.callout {
+	> .is-collapsed .callout-title {
+    	border: 0px;
+	}
+}
+
+.callout-content {
+	margin-bottom: -0.5em;
 }

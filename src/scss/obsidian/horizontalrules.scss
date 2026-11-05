@@ -1,17 +1,15 @@
 /* --- HORIZONTAL RULES --- */
-.markdown-preview-view hr::after {
-    content: var("--vr-hr-sym");
+.markdown-rendered hr::after { // markdown-rendered required here
+    content: var(--vr-horizontal-rule-symbol);
     display: inline-block;
 
     position: absolute;
     left: 50%;
     transform-origin: 50% 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    
-    background-color: var(--background-primary);
-    color: var(--text-accent);
+    transform: translate(-50%, -55%) rotate(0deg);
 
-    font-size: 16px;
-    
-    padding: 8px 8px var(--vr-hr-padding);
+    background-color: var(--background-primary);
+    color: var(--color-accent);
+
+    padding: 0.25em 0.5em;
 }

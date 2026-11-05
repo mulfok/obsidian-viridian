@@ -1,56 +1,68 @@
-@import "abstracts/version";
+/* we're so back. */
+@use "abstracts/version";
 
 /* -------------------------------------
             ASSETS
 ------------------------------------- */
-@import "assets/fonts";
+@use "assets/webfonts";
 
 /* -------------------------------------
             VARIABLES
 ------------------------------------- */
-@import "variables/root";
-@import "variables/theme-dark";
-@import "variables/theme-light";
+@use "variables/root";
 
-/* ----------
-    COLOUR SCHEMES
----------- */
-@import "features/colour schemes/zenburn";
+/* -------------------------------------
+            COLOUR SCHEMES
+------------------------------------- */
+@use "colour-schemes/default-dark";
+@use "colour-schemes/default-light";
+@use "colour-schemes/dark-oled";
+@use "colour-schemes/dark-nord";
+//@use "features/colour schemes/zenburn";
 
 /* -------------------------------------
             OBSIDIAN
 ------------------------------------- */
-@import "obsidian/fonts";
-@import "obsidian/codeblocks";
-@import "obsidian/sidebar";
-@import "obsidian/callouts";
-@import "obsidian/tables";
-@import "obsidian/titlebar";
-@import "obsidian/statusbar";
-@import "obsidian/horizontalrules";
-@import "obsidian/links";
-@import "obsidian/modals";
-@import "obsidian/panes";
-@import "obsidian/scrollbars.scss";
-@import "obsidian/blockquotes";
-@import "obsidian/search-replace";
-@import "obsidian/prompts";
-@import "obsidian/interface";
+@use "obsidian/fonts";
+@use "obsidian/tables";
+@use "obsidian/blockquotes";
+@use "obsidian/links";
+@use "obsidian/callouts";
+@use "obsidian/horizontalrules";
+@use "obsidian/codeblocks";
+@use "obsidian/sidebar";
+@use "obsidian/statusbar";
+@use "obsidian/interface";
+
+// Deprecated
+//@use "obsidian/titlebar";
+//@use "obsidian/modals";
+//@use "obsidian/scrollbars.scss"; hider plugin
+//@use "obsidian/panes";
+//@use "obsidian/search-replace";
+//@use "obsidian/prompts";
+
 
 /* -------------------------------------
             FEATURES
 ------------------------------------- */
-@import "features/header_backgrounds";
-@import "features/typography";
-@import "features/roundness";
-@import "features/aside";
-@import "features/clean-embed";
-@import "features/highlights";
-@import "features/custom-icons";
+
+@use "features/header-backgrounds";
+@use "features/aside";
+@use "features/rounding";
+@use "features/clean-embed";
+@use "features/float";
+
+// Deprecated
+//@use "features/typography";
+//@use "features/highlights";
+//@use "features/custom-icons";
 
 /* -------------------------------------
             PLUGINS
 ------------------------------------- */
-@import "plugins/style_settings";
 
-@import "abstracts/_footer";
+@use "plugins/style_settings";
+
+// Never used this to begin with???
+//@use "abstracts/_footer";

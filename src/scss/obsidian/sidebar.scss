@@ -1,160 +1,156 @@
 /* --- SIDEBAR --- */
-/* Sidebar Buttons */
-.side-dock-ribbon-action {
-    padding-top: var(--vr-sidebar-padding);
-    padding-bottom: var(--vr-sidebar-padding);
+// Add a border to the top left and top right parts of the sidebar.
+.workspace .mod-sidedock.mod-left-split .workspace-tab-header-container { border-right: 1px solid var(--background-modifier-border); }
+.workspace .mod-sidedock.mod-right-split .workspace-tab-header-container { border-left: 1px solid var(--background-modifier-border); }
+
+// Display workspace tabs vertically (left)
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space {
+	// Show text next to icons
+	--sidebar-tab-text-display: inline-block;
+
+	& .workspace-tab-header {
+		background-color: inherit;
+		color: var(--text-faint); // don't change colour based on window focus (bruh)
+
+		& .workspace-tab-header-inner-icon {
+			color: var(--text-faint);
+		}
+
+		&:not(.is-active):hover { // hey, whitespace is important on this line!	
+			//background-color: blue;
+			border: none;
+			box-shadow: none;
+
+			//font-weight: bold;
+			//color: var(--text-normal);
+
+			& .workspace-tab-header-inner-icon {
+				color: var(--text-muted);
+			}
+
+			& .workspace-tab-header-inner {
+				background-color: inherit;
+				color: var(--text-muted);
+			}
+		}
+
+		&-inner {
+			padding: var(--size-2-3) var(--size-2-3);
+
+			justify-content: left;
+
+			&-title {
+				padding-left: 0.6em;
+			}
+		}
+
+		&-container {
+			max-height: unset;
+			height: fit-content;
+			
+			padding-bottom: 0;
+
+			background-color: transparent;
+
+			& .workspace-tab-header.is-active {
+				background-color: inherit;
+				color: var(--text-normal);
+
+				font-weight: bold;
+
+				& .workspace-tab-header-inner-icon {
+					color: var(--text-normal);
+				}
+			}
+
+			&-inner {
+				flex-direction: column;
+				width: stretch;
+				gap: 0;
+				padding-left: 0;
+				max-height: unset;
+			}
+		}
+	}
 }
 
-.mod-left .workspace-ribbon-collapse-btn {
-    margin: 0;
-    padding: 20px 6px 15px;
+// Right
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space {
+	// Show text next to icons
+	--sidebar-tab-text-display: inline-block;
+
+	& .workspace-tab-header {
+		background-color: inherit;
+		color: var(--text-faint); // don't change colour based on window focus (bruh)
+
+		& .workspace-tab-header-inner-icon {
+			color: var(--text-faint);
+		}
+
+		&:not(.is-active):hover { // hey, whitespace is important on this line!	
+			//background-color: blue;
+			border: none;
+			box-shadow: none;
+
+			//font-weight: bold;
+			//color: var(--text-normal);
+
+			& .workspace-tab-header-inner-icon {
+				color: var(--text-muted);
+			}
+
+			& .workspace-tab-header-inner {
+				background-color: inherit;
+				color: var(--text-muted);
+			}
+		}
+
+		&-inner {
+			padding: var(--size-2-3) var(--size-2-3);
+
+			justify-content: left;
+
+			&-title {
+				padding-left: 0.6em;
+			}
+		}
+
+		&-container {
+			max-height: unset;
+			height: fit-content;
+			
+			padding-bottom: 0;
+
+			background-color: transparent;
+
+			& .workspace-tab-header.is-active {
+				background-color: inherit;
+				color: var(--text-normal);
+
+				font-weight: bold;
+
+				& .workspace-tab-header-inner-icon {
+					color: var(--text-normal);
+				}
+			}
+
+			&-inner {
+				flex-direction: column;
+				width: stretch;
+				gap: 0;
+				padding-left: 0;
+				max-height: unset;
+			}
+		}
+	}
 }
 
-/* Navigation Header */
-.nav-buttons-container { justify-content: center; align-content: center; }
-.nav-action-button { margin: 0px; padding: 0px var(--vr-sidebar-nav-padding); }
-
-.nav-header {
-    padding: 8px 5px 2px;
-    border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
+// Move nav buttons to one side
+body:not(.is-phone) .nav-buttons-container {
+	justify-content: right;
 }
 
-/* Workspace Tab Navigation */
-.mod-left-split .workspace-tabs {
-    border-left: none !important;
-}
-
-.workspace-tabs {
-    padding-right: 0;
-    border-left: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
-    border-right: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
-    background: var(--background-secondary);
-}
-
-.workspace-split {
-    &.mod-left-split {
-        & .workspace-tab-header-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            min-height: 40px;
-        }
-    }
-    &.mod-right-split {
-        & .workspace-tab-header-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            min-height: 40px;
-        }
-    }
-}
-
-.workspace-tab-header-container {
-    min-height: unset !important;
-    padding: 0px;
-    padding-top: 1px;
-    margin: 5px -14px 0px -12px;
-    border-bottom: var(--vr-sidebar-border-width) solid var(--background-modifier-border);
-    background-color: var(--background-secondary);
-}
-
-.workspace-tab-header {
-    width: 24px;
-    height: 24px;
-
-    padding: var(--vr-workspace-tab-padding);
-    margin: 0px;
-
-    & .workspace-tab-header-inner-icon svg {
-        height: 16px;
-        width: 16px;
-
-        vertical-align: 1px;
-
-        position: relative;
-        left: 1px;
-    }
-
-    &.is-active {
-        color: var(--text-accent);
-    }
-}
-
-.workspace-tab-header-inner {
-    background: transparent !important;
-    padding: 0px;
-}
-
-/* Stop colour change on collapse
-NOTE:
-    I just did this since I didn't like how
-the colour changed on the ribbon when
-collapsing it. This is purely preferential,
-and I may add a sytle setting to toggle this
-in the future. */
-
-.workspace-ribbon.side-dock-ribbon.mod-left {
-    border: none !important;
-}
-
-/* Floating Collapse Buttons */
-.side-dock-ribbon.mod-right {
-    display: block;
-    width: 36px;
-    height: 36px;
-    margin: 36px 8px;
-    
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25);
-    opacity: 0.5;
-    border: 1px solid var(--background-modifier-border);
-    border-radius: var(--vr-border-radius-normal);
-    
-    transition: var(--vr-duration-normal) var(--vr-animation-smooth);
-
-    &:hover { opacity: 1; }
-
-    & .workspace-ribbon-collapse-btn {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-
-        padding: 9px 0px;
-    }
-} 
-
-/* File EXplorer */
-
-/* Vault file name */
-.nav-folder.mod-root > .nav-folder-title[data-path="/"] {
-    text-transform: uppercase;
-    color: var(--text-faint);
-
-    font-size: var(--vr-font-size-normal);
-    font-weight: bolder;
-
-    margin-top: 2px;
-    margin-bottom: 0px;
-}
-
-.nav-folder-title, .nav-file-title {
-    height: 24px;
-    align-items: center;
-
-    font-weight: bold;
-
-    border-radius: var(--vr-border-radius-normal);
-
-    &:hover { background-color: var(--background-primary-alt) !important; }
+// Italicise folders in the file explorer
+.tree-item-self.nav-folder-title {
+	font-style: italic;
 }
