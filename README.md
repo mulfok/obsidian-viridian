@@ -98,4 +98,6 @@ I can't say for sure what changed, or what spurred it on (probably nostalgia), b
 ## Acknowledgements
 Big thanks to kepano behind [Minimal](https://community.obsidian.md/themes/minimal), and Alexis C behind [Baseline](https://community.obsidian.md/themes/baseline) for the inspiration behind the labelled navigation pane.
 
+Thanks to ElsaTam (Kapirklaa on Discord) for the float.css that is included in Viridian.
+
 And big thanks to previous and current users of Viridian! The kind comments are extremely appreciated <3
