@@ -38,8 +38,8 @@
         }
 
 		& svg {
-			width: 1em !important;
-			height: 1em !important;
+			width: 1em; //!important;
+			height: 1em; //!important;
 		}
     }
 
@@ -50,7 +50,7 @@
         }
 
         & .callout-content {
-            opacity: 0 !important;
+            opacity: 0; //!important;
         }
     }
 

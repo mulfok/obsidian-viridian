@@ -1,18 +1,20 @@
 /* --- TABLES --- */
 /* Normal Tables */
-th {
-	border-color: var(--background-modifier-border) !important;
-	background-color: var(--background-primary-alt) !important;
+.markdown-rendered th,
+.cm-html-embed thead tr>th:nth-child(2n+2),
+.markdown-rendered thead tr>th:nth-child(2n+2) {
+	border-color: var(--background-modifier-border);
+	background-color: var(--background-primary-alt);
 }
 
-td {
-	border-color: var(--background-modifier-border) !important;
-	background-color: var(--background-primary) !important;
+.markdown-rendered td {
+	border-color: var(--background-modifier-border);
+	background-color: var(--background-primary);
 }
 
 /* Dataview Tables */
 .table-view-table {
-    border-collapse: collapse !important;
+    border-collapse: collapse;
     border: 1px solid var(--color-base-40);
 
     & .table-view-th {

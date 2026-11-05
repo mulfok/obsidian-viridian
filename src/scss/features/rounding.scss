@@ -9,18 +9,18 @@ pre[class*="language-"],
 .modal,
 .prompt,
 input {
-    border-radius: var(--vr-border-radius) !important;
+    border-radius: var(--vr-border-radius);
 }
 
 // Codeblocks (source mode)
-.HyperMD-codeblock-begin {
-    border-top-left-radius: var(--vr-border-radius) !important;
-    border-top-right-radius: var(--vr-border-radius) !important;
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+    border-top-left-radius: var(--vr-border-radius);
+    border-top-right-radius: var(--vr-border-radius);
 }
 
-.HyperMD-codeblock-end {
-    border-bottom-left-radius: var(--vr-border-radius) !important;
-    border-bottom-right-radius: var(--vr-border-radius) !important;
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    border-bottom-left-radius: var(--vr-border-radius);
+    border-bottom-right-radius: var(--vr-border-radius);
 }
 
 /* Rounded Tables
@@ -35,12 +35,13 @@ CSS than myself, feel free to try and fix
 this thing up.
 */
 
-table:not(.table-view-table) { /* Disabled for Dataview Tables right now. */
-    border-collapse: separate !important;
+// Disabled for Dataview Tables right now.
+.markdown-rendered table:not(.table-view-table) { 
+    border-collapse: separate;
     border-spacing: 0;
 
-    & tr:first-child th:first-child { border-top-left-radius: var(--vr-border-radius); } /* Top-Left Radius */
-    & tr:first-child th:last-child { border-top-right-radius: var(--vr-border-radius); } /* Top-Right Radius */
-    & tr:last-child td:first-child { border-bottom-left-radius: var(--vr-border-radius); } /* Bottom-Left Radius */
-    & tr:last-child td:last-child { border-bottom-right-radius: var(--vr-border-radius); } /* Bottom-Right Radius */
+    & tr:first-child th:first-child { border-top-left-radius: var(--vr-border-radius); } //  Top-Left Radius
+    & tr:first-child th:last-child { border-top-right-radius: var(--vr-border-radius); } //  Top-Right Radius
+    & tr:last-child td:first-child { border-bottom-left-radius: var(--vr-border-radius); } //  Bottom-Left Radius
+    & tr:last-child td:last-child { border-bottom-right-radius: var(--vr-border-radius); } //  Bottom-Right Radius
 }

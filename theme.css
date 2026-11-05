@@ -216,19 +216,21 @@
 
 /* --- TABLES --- */
 /* Normal Tables */
-th {
-  border-color: var(--background-modifier-border) !important;
-  background-color: var(--background-primary-alt) !important;
+.markdown-rendered th,
+.cm-html-embed thead tr > th:nth-child(2n+2),
+.markdown-rendered thead tr > th:nth-child(2n+2) {
+  border-color: var(--background-modifier-border);
+  background-color: var(--background-primary-alt);
 }
 
-td {
-  border-color: var(--background-modifier-border) !important;
-  background-color: var(--background-primary) !important;
+.markdown-rendered td {
+  border-color: var(--background-modifier-border);
+  background-color: var(--background-primary);
 }
 
 /* Dataview Tables */
 .table-view-table {
-  border-collapse: collapse !important;
+  border-collapse: collapse;
   border: 1px solid var(--color-base-40);
 }
 .table-view-table .table-view-th {
@@ -271,7 +273,6 @@ td {
   font-size: 3em;
   font-weight: 400;
   line-height: 3em;
-  color: var(--background-primary);
   color: color-mix(in oklch, var(--color-accent) 50%, transparent);
   position: absolute;
   bottom: 0.75em;
@@ -283,22 +284,21 @@ td {
 }
 
 /* --- LINKS --- */
-.internal-link, .external-link, .tag {
-  text-decoration: none !important;
+.markdown-rendered .internal-link, .markdown-rendered .external-link, .markdown-rendered .tag {
+  text-decoration: none;
 }
-
-.external-link {
+.markdown-rendered .external-link {
   color: var(--color-blue);
 }
-
-cite {
+.markdown-rendered cite {
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
 }
-
-/* Stop footnotes affecting line height */
-.footnote-ref {
+.markdown-rendered {
+  /* Stop footnotes affecting line height */
+}
+.markdown-rendered .footnote-ref {
   vertical-align: top;
   top: -0.3em;
 }
@@ -329,14 +329,14 @@ cite {
   padding-right: 0.25em;
 }
 .callout .callout-title svg {
-  width: 1em !important;
-  height: 1em !important;
+  width: 1em;
+  height: 1em;
 }
 .callout .is-collapsed .callout-title {
   border-radius: var(--vr-border-radius);
 }
 .callout .is-collapsed .callout-content {
-  opacity: 0 !important;
+  opacity: 0;
 }
 .callout[data-callout=metadata] {
   --callout-color: var(--color-accent);
@@ -546,7 +546,7 @@ body:not(.is-phone) .nav-buttons-container {
 .view-header-title-container,
 .view-header-title-container::after,
 .view-header-title {
-  background: var(--background-primary) !important;
+  background: var(--background-primary);
 }
 
 /* -------------------------------------
@@ -565,7 +565,7 @@ body:not(.is-phone) .nav-buttons-container {
   position: relative;
   overflow: hidden; /* This maaaaay be a little busted */
   background-color: color-mix(in oklch, var(--color-accent) 20%, transparent);
-  color: var(--color-accent) !important;
+  color: var(--color-accent);
   z-index: 0;
 }
 .el-h1 h1::before,
@@ -611,17 +611,17 @@ pre[class*=language-],
 .modal,
 .prompt,
 input {
-  border-radius: var(--vr-border-radius) !important;
+  border-radius: var(--vr-border-radius);
 }
 
-.HyperMD-codeblock-begin {
-  border-top-left-radius: var(--vr-border-radius) !important;
-  border-top-right-radius: var(--vr-border-radius) !important;
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top-left-radius: var(--vr-border-radius);
+  border-top-right-radius: var(--vr-border-radius);
 }
 
-.HyperMD-codeblock-end {
-  border-bottom-left-radius: var(--vr-border-radius) !important;
-  border-bottom-right-radius: var(--vr-border-radius) !important;
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom-left-radius: var(--vr-border-radius);
+  border-bottom-right-radius: var(--vr-border-radius);
 }
 
 /* Rounded Tables
@@ -635,26 +635,22 @@ spacing and it seemed to work.
 CSS than myself, feel free to try and fix
 this thing up.
 */
-table:not(.table-view-table) { /* Disabled for Dataview Tables right now. */
-  border-collapse: separate !important;
+.markdown-rendered table:not(.table-view-table) {
+  border-collapse: separate;
   border-spacing: 0;
 }
-table:not(.table-view-table) tr:first-child th:first-child {
+.markdown-rendered table:not(.table-view-table) tr:first-child th:first-child {
   border-top-left-radius: var(--vr-border-radius);
 }
-table:not(.table-view-table) { /* Top-Left Radius */ }
-table:not(.table-view-table) tr:first-child th:last-child {
+.markdown-rendered table:not(.table-view-table) tr:first-child th:last-child {
   border-top-right-radius: var(--vr-border-radius);
 }
-table:not(.table-view-table) { /* Top-Right Radius */ }
-table:not(.table-view-table) tr:last-child td:first-child {
+.markdown-rendered table:not(.table-view-table) tr:last-child td:first-child {
   border-bottom-left-radius: var(--vr-border-radius);
 }
-table:not(.table-view-table) { /* Bottom-Left Radius */ }
-table:not(.table-view-table) tr:last-child td:last-child {
+.markdown-rendered table:not(.table-view-table) tr:last-child td:last-child {
   border-bottom-right-radius: var(--vr-border-radius);
 }
-table:not(.table-view-table) { /* Bottom-Right Radius */ }
 
 /* --- CLEAN EMBED --- */
 .markdown-embed {

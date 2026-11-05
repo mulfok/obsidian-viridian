@@ -1,23 +1,22 @@
 /* --- LINKS --- */
-.internal-link, .external-link, .tag {
-    //font-feature-settings: "smcp";
-    text-decoration: none !important;
-}
+.markdown-rendered {
+    & .internal-link, .external-link, .tag {
+        text-decoration: none;
+    }
 
-.external-link {
-    color: var(--color-blue);
-    //&::after { display: none !important; }
-}
+    & .external-link {
+        color: var(--color-blue);
+    }
 
-cite {
-    //font-feature-settings: "smcp";
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 600;
-}
+    & cite {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+    }
 
-/* Stop footnotes affecting line height */
-.footnote-ref {
-	vertical-align: top;
-	top: -0.3em;
+    /* Stop footnotes affecting line height */
+    & .footnote-ref {
+        vertical-align: top;
+        top: -0.3em;
+    }
 }
