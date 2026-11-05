@@ -11,7 +11,8 @@ Viridian is an [Obsidian](https://obsidian.md) theme for a curated desktop exper
 - [Settings](#settings)
 - [Colour Schemes](#colour-schemes)
 - [Recommendations](#recommendations)
-- [It's back!](#it's-back!)
+- [Transparency](#transparency)
+- [It's back!](#it's-back)
 - [Acknowledgements](#acknowledgements)
 
 ## Quickstart
@@ -35,16 +36,23 @@ Simply download the theme (from the theme store or otherwise) and then:
 			- Monospace: Victor Mono
 			- Interface: Inter
 		- *...or use whatever you like!*
-4. (Optional) Check out my [[#Recommendations|recommended configs]]
+4. (Optional) Check out my [recommended configs](#recommendations)
 
 ## Screenshots
-An overview of various markdown elements in Viridian...
 
-(example.md)
+> There's an example.md in the repository if you would like to play around with Viridian!
 
 **Colour schemes** let you enjoy Viridian in a variety of my favourite flavours.
 
-Viridian's **extra features** let you write notes with some extra non-intrusive flare, so that things don't look wrong in other themes.
+![](/images/colour-schemes.png)
+
+Viridian's **extra features** let you write notes with some extra, obsidian-style flare, so that things don't look wrong in other themes.
+
+![](/images/features.png)
+
+When I use Viridian, I like a *transparent window.* (See [Transparency](transparency).)
+
+![](/images/transparency.png)
 
 ## Design Goals
 Viridian's design goals have always been simple, in my head.
@@ -70,6 +78,11 @@ Here are the things I like, why not try a few out?
 - Hider > Interface > **Hide vault name**
 - Hider > Interface > **Hide scroll bars**
 - Style Manager > Viridian > **Left Navigation Labels**
+
+## Transparency
+As far as I know, Obsidian does not currently provide an easy way to have a transparent window, and it falls to the user to set it up on their system instead.
+
+On Linux, I personally use my window manager's compositor effects to make Obsidian around 20% transparent, along with some background blur. For this, I recommend using the **OLED** theme (which I made specifically for this purpose) through **Style Manager.**
 
 ## It's back!
 Viridian was originally conceived in 2022 (some of you may remember), when I was around sixteen. Life started approaching very fast, and I ended up burning out after Viridian broke upon Obsidian's transition to stable releases (1.x.x). It's been a little over **four years** of radio silence.
