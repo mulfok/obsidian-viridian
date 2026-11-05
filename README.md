@@ -1,4 +1,6 @@
 # Viridian
+![](/cover.png)
+
 > A theme designed to make your time in Obsidian joyful, and focused.
 
 Viridian is an [Obsidian](https://obsidian.md) theme for a curated desktop experience, with (primitive, but improving!) mobile support.
@@ -50,7 +52,7 @@ Viridian's **extra features** let you write notes with some extra, obsidian-styl
 
 ![](/images/features.png)
 
-When I use Viridian, I like a *transparent window.* (See [Transparency](transparency).)
+When I use Viridian, I like a *transparent window.* (See [Transparency](#transparency).)
 
 ![](/images/transparency.png)
 
