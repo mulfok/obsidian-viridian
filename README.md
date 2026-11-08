@@ -14,7 +14,7 @@ Viridian is an [Obsidian](https://obsidian.md) theme for a curated desktop exper
 - [Colour Schemes](#colour-schemes)
 - [Recommendations](#recommendations)
 - [Transparency](#transparency)
-- [It's back!](#it's-back)
+- [It's back!](#its-back)
 - [Acknowledgements](#acknowledgements)
 
 ## Quickstart
@@ -31,7 +31,7 @@ Everything in this section is optional, but I recommend having a quick peek thro
     2. Serif (Default, uses Fraunces, Lora, and Victor Mono)
     3. Sans (Uses Lexend, Manrope, and Inter)
 
-Check out my [recommended configs](#mulfok's-configs)
+Check out my [recommended configs](#mulfoks-configs)
 
 ## Screenshots
 
