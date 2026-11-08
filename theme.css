@@ -76,8 +76,7 @@
 /* -------------------------------------
             VARIABLES
 ------------------------------------- */
-:root {
-  --vr-font-header: "Fraunces";
+body {
   --vr-header-symbol: "#"; /* § */
   --vr-header-symbol-offset: 0.3em;
   --vr-h1-weight: 800;
@@ -88,6 +87,23 @@
   --vr-h6-weight: 500;
   --vr-horizontal-rule-symbol: "§"; /* ¶ */
   --vr-border-radius: 8px;
+  --accent-h: 145;
+  --accent-s: 30%;
+  --accent-l: 40%;
+}
+
+.vr-serif {
+  --vr-font-header: "Fraunces";
+  --vr-font-body: "Lora";
+  --vr-font-interface: "Victor Mono";
+  --vr-font-monospace: "Victor Mono";
+}
+
+.vr-sans {
+  --vr-font-header: "Lexend";
+  --vr-font-body: "Manrope";
+  --vr-font-interface: "Inter";
+  --vr-font-monospace: "Victor Mono";
 }
 
 /* -------------------------------------
@@ -180,6 +196,12 @@
 /* -------------------------------------
             OBSIDIAN
 ------------------------------------- */
+body.vr-serif, body.vr-sans {
+  --font-text-theme: var(--vr-font-body);
+  --font-interface-theme: var(--vr-font-interface);
+  --font-monospace-theme: var(--vr-font-monospace);
+}
+
 /* Headers */
 .el-h1 h1,
 .el-h2 h2,
@@ -188,30 +210,6 @@
 .el-h5 h5,
 .el-h6 h6 {
   font-family: var(--vr-font-header);
-}
-
-.el-h1 h1 {
-  font-weight: var(--vr-h1-weight);
-}
-
-.el-h2 h2 {
-  font-weight: var(--vr-h2-weight);
-}
-
-.el-h3 h3 {
-  font-weight: var(--vr-h3-weight);
-}
-
-.el-h4 h4 {
-  font-weight: var(--vr-h4-weight);
-}
-
-.el-h5 h5 {
-  font-weight: var(--vr-h5-weight);
-}
-
-.el-h6 h6 {
-  font-weight: var(--vr-h6-weight);
 }
 
 /* --- TABLES --- */
@@ -249,7 +247,7 @@
 }
 
 /* --- BLOCKQUOTES --- */
-:not(.is-phone) .markdown-rendered blockquote {
+body:not(.is-phone) .markdown-rendered blockquote {
   max-width: 66%;
 }
 
@@ -287,8 +285,12 @@
 .markdown-rendered .internal-link, .markdown-rendered .external-link, .markdown-rendered .tag {
   text-decoration: none;
 }
-.markdown-rendered .external-link {
-  color: var(--color-blue);
+.markdown-rendered {
+  /*
+  & .external-link {
+      color: var(--color-blue);
+  }
+  */
 }
 .markdown-rendered cite {
   text-decoration: none;
@@ -398,49 +400,49 @@
   border-left: 1px solid var(--background-modifier-border);
 }
 
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split {
   --sidebar-tab-text-display: inline-block;
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header {
   background-color: inherit;
   color: var(--text-faint);
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header .workspace-tab-header-inner-icon {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header .workspace-tab-header-inner-icon {
   color: var(--text-faint);
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header:not(.is-active):hover {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header:not(.is-active):hover {
   border: none;
   box-shadow: none;
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-icon {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-icon {
   color: var(--text-muted);
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   background-color: inherit;
   color: var(--text-muted);
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-inner {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header-inner {
   padding: var(--size-2-3) var(--size-2-3);
   justify-content: left;
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-inner-title {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header-inner-title {
   padding-left: 0.6em;
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-container {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header-container {
   max-height: unset;
   height: fit-content;
   padding-bottom: 0;
   background-color: transparent;
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-container .workspace-tab-header.is-active {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active {
   background-color: inherit;
   color: var(--text-normal);
   font-weight: bold;
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
   color: var(--text-normal);
 }
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space .workspace-tab-header-container-inner {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .workspace-tab-header-container-inner {
   flex-direction: column;
   width: stretch;
   gap: 0;
@@ -448,49 +450,49 @@
   max-height: unset;
 }
 
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split {
   --sidebar-tab-text-display: inline-block;
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header {
   background-color: inherit;
   color: var(--text-faint);
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header .workspace-tab-header-inner-icon {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header .workspace-tab-header-inner-icon {
   color: var(--text-faint);
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header:not(.is-active):hover {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header:not(.is-active):hover {
   border: none;
   box-shadow: none;
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-icon {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-icon {
   color: var(--text-muted);
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
   background-color: inherit;
   color: var(--text-muted);
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-inner {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header-inner {
   padding: var(--size-2-3) var(--size-2-3);
   justify-content: left;
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-inner-title {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header-inner-title {
   padding-left: 0.6em;
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-container {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header-container {
   max-height: unset;
   height: fit-content;
   padding-bottom: 0;
   background-color: transparent;
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-container .workspace-tab-header.is-active {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header-container .workspace-tab-header.is-active {
   background-color: inherit;
   color: var(--text-normal);
   font-weight: bold;
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
   color: var(--text-normal);
 }
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space .workspace-tab-header-container-inner {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .workspace-tab-header-container-inner {
   flex-direction: column;
   width: stretch;
   gap: 0;
@@ -552,6 +554,30 @@ body:not(.is-phone) .nav-buttons-container {
 /* -------------------------------------
             FEATURES
 ------------------------------------- */
+.el-h1 h1 {
+  font-weight: var(--vr-h1-weight);
+}
+
+.el-h2 h2 {
+  font-weight: var(--vr-h2-weight);
+}
+
+.el-h3 h3 {
+  font-weight: var(--vr-h3-weight);
+}
+
+.el-h4 h4 {
+  font-weight: var(--vr-h4-weight);
+}
+
+.el-h5 h5 {
+  font-weight: var(--vr-h5-weight);
+}
+
+.el-h6 h6 {
+  font-weight: var(--vr-h6-weight);
+}
+
 /* Preview Mode */
 .el-h1 h1,
 .el-h2 h2,
@@ -863,13 +889,6 @@ settings:
 				label: "OLED"
 				value: vr-dark-oled
 	-
-		id: vr-font-header
-		title: Header Font
-		description: "The font used for markdown headers."
-		type: variable-text
-        default: Fraunces
-        quotes: false
-	-
 		id: vr-header-symbol
 		title: Header Symbol
 		description: "The symbol that shows up in the background."
@@ -897,4 +916,20 @@ settings:
 		type: class-toggle
 		default: True
 		addCommand: false
+	-
+		id: vr-scheme-font
+		title: "Font Scheme"
+		description: "The style of fonts used in the interface."
+		type: class-select
+		default: vr-serif
+		options:
+			-
+				label: "None"
+				value: vr-font-none
+			-
+				label: "Serif"
+				value: vr-serif
+			-
+				label: "Sans"
+				value: vr-sans
 */

@@ -1,7 +1,7 @@
 /* --- BLOCKQUOTES --- */
 // Make blockquotes full width on mobile
 // Is there a way to diffrentiate between portrait and landscape?
-:not(.is-phone) .markdown-rendered blockquote { max-width: 66%; }
+body:not(.is-phone) .markdown-rendered blockquote { max-width: 66%; }
 
 .markdown-rendered blockquote {
     background-color: color-mix(in oklch, var(--color-accent) 10%, transparent);

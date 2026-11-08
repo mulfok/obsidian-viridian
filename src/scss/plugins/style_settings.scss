@@ -31,13 +31,6 @@ settings:
 				label: "OLED"
 				value: vr-dark-oled
 	-
-		id: vr-font-header
-		title: Header Font
-		description: "The font used for markdown headers."
-		type: variable-text
-        default: Fraunces
-        quotes: false
-	-
 		id: vr-header-symbol
 		title: Header Symbol
 		description: "The symbol that shows up in the background."
@@ -65,4 +58,20 @@ settings:
 		type: class-toggle
 		default: True
 		addCommand: false
+	-
+		id: vr-scheme-font
+		title: "Font Scheme"
+		description: "The style of fonts used in the interface."
+		type: class-select
+		default: vr-serif
+		options:
+			-
+				label: "None"
+				value: vr-font-none
+			-
+				label: "Serif"
+				value: vr-serif
+			-
+				label: "Sans"
+				value: vr-sans
 */

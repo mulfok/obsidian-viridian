@@ -1,3 +1,11 @@
+// set fonts based on preferences
+// note that Obsidian preferences override these
+body.vr-serif, body.vr-sans {
+	--font-text-theme: var(--vr-font-body);
+	--font-interface-theme: var(--vr-font-interface);
+	--font-monospace-theme: var(--vr-font-monospace);
+}
+
 /* Headers */
 // Reading Mode
 .el-h1 h1,
@@ -8,11 +16,3 @@
 .el-h6 h6 { 
 	font-family: var(--vr-font-header);
 }
-
-// Header weights
-.el-h1 h1 { font-weight: var(--vr-h1-weight); }
-.el-h2 h2 { font-weight: var(--vr-h2-weight); }
-.el-h3 h3 { font-weight: var(--vr-h3-weight); }
-.el-h4 h4 { font-weight: var(--vr-h4-weight); }
-.el-h5 h5 { font-weight: var(--vr-h5-weight); }
-.el-h6 h6 { font-weight: var(--vr-h6-weight); }

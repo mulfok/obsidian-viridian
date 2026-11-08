@@ -4,7 +4,7 @@
 .workspace .mod-sidedock.mod-right-split .workspace-tab-header-container { border-left: 1px solid var(--background-modifier-border); }
 
 // Display workspace tabs vertically (left)
-.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split .mod-top-left-space {
+.vr-nav-labels-left .workspace .mod-sidedock.mod-left-split /*.mod-top-left-space*/ {
 	// Show text next to icons
 	--sidebar-tab-text-display: inline-block;
 
@@ -75,7 +75,7 @@
 }
 
 // Right
-.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split .mod-top-right-space {
+.vr-nav-labels-right .workspace .mod-sidedock.mod-right-split /*.mod-top-right-space*/ {
 	// Show text next to icons
 	--sidebar-tab-text-display: inline-block;
 

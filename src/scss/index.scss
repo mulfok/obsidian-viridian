@@ -9,7 +9,7 @@
 /* -------------------------------------
             VARIABLES
 ------------------------------------- */
-@use "variables/root";
+@use "variables/body";
 
 /* -------------------------------------
             COLOUR SCHEMES
@@ -18,7 +18,6 @@
 @use "colour-schemes/default-light";
 @use "colour-schemes/dark-oled";
 @use "colour-schemes/dark-nord";
-//@use "features/colour schemes/zenburn";
 
 /* -------------------------------------
             OBSIDIAN
@@ -34,15 +33,6 @@
 @use "obsidian/statusbar";
 @use "obsidian/interface";
 
-// Deprecated
-//@use "obsidian/titlebar";
-//@use "obsidian/modals";
-//@use "obsidian/scrollbars.scss"; hider plugin
-//@use "obsidian/panes";
-//@use "obsidian/search-replace";
-//@use "obsidian/prompts";
-
-
 /* -------------------------------------
             FEATURES
 ------------------------------------- */
@@ -53,16 +43,8 @@
 @use "features/clean-embed";
 @use "features/float";
 
-// Deprecated
-//@use "features/typography";
-//@use "features/highlights";
-//@use "features/custom-icons";
-
 /* -------------------------------------
             PLUGINS
 ------------------------------------- */
 
 @use "plugins/style_settings";
-
-// Never used this to begin with???
-//@use "abstracts/_footer";

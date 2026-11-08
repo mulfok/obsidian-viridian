@@ -1,7 +1,4 @@
-:root {
-	// Fonts
-	--vr-font-header: "Fraunces";
-
+body {
 	// Headers
 	--vr-header-symbol: "#"; /* § */
 	--vr-header-symbol-offset: 0.3em;
@@ -18,4 +15,24 @@
 
 	// Appearance
 	--vr-border-radius: 8px; //0.25em; // try to look like 8px @ 20 pt font
+
+	// Viridian green default
+	--accent-h: 145;
+	--accent-s: 30%;
+	--accent-l: 40%;
+}
+
+// Font schemes
+.vr-serif {
+	--vr-font-header: "Fraunces";
+	--vr-font-body: "Lora";
+	--vr-font-interface: "Victor Mono";
+	--vr-font-monospace: "Victor Mono";
+}
+
+.vr-sans {
+	--vr-font-header: "Lexend";
+	--vr-font-body: "Manrope";
+	--vr-font-interface: "Inter";
+	--vr-font-monospace: "Victor Mono";
 }
