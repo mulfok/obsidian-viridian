@@ -18,27 +18,20 @@ Viridian is an [Obsidian](https://obsidian.md) theme for a curated desktop exper
 - [Acknowledgements](#acknowledgements)
 
 ## Quickstart
-Simply download the theme (from the theme store or otherwise) and then:
+Viridian is meant to be a very non-intrusive theme by default. You can use it straight out of the box, and keep all your preferences from Obsidian (font family, accent colour, etc).
 
-1. (Optional, but highly recommended)
-	1. Install [Style Manager](https://community.obsidian.md/plugins/style-manager)
-	2. Install [Hider](https://community.obsidian.md/plugins/obsidian-hider)
+Everything in this section is optional, but I recommend having a quick peek through anyways.
+1. Install helper plugins (Highly Recommended)
+	1. Install [Style Manager](https://community.obsidian.md/plugins/style-manager), exposes Viridian's full settings
+	2. Install [Hider](https://community.obsidian.md/plugins/obsidian-hider), allows you to elegantly hide certain Obsidian elements
 2. Change your accent colour to Viridian's
-	1. Settings > Appearance > Accent Colour > **#478562**
-3. Change your fonts to Viridian's (they come bundled!)
-	- Settings > Interface > **... Fonts**
-		- *Serif Mode (Work)*
-			- Body: Lora
-			- Header (Style Manager): Fraunces
-			- Monospace: Victor Mono
-			- Interface: Inter
-		- *Sans Mode (Play)*
-			- Body: Manrope
-			- Header (Style Manager): Lexend
-			- Monospace: Victor Mono
-			- Interface: Inter
-		- *...or use whatever you like!*
-4. (Optional) Check out my [recommended configs](#recommendations)
+	1. Settings > Appearance > Accent Colour > Restore Default
+3. (Style Manager) Choose your font scheme
+    1. None (Keeps your Obsidian preferences)
+    2. Serif (Default, uses Fraunces, Lora, and Victor Mono)
+    3. Sans (Uses Lexend, Manrope, and Inter)
+
+Check out my [recommended configs](#mulfok's-configs)
 
 ## Screenshots
 
@@ -64,7 +57,7 @@ This is what I want from Viridian:
 2. It needs to be **pleasant to look at.** (fun!)
 3. It needs to be **nondestructive.** (keep things familiar!)
 
-## Recommendations
+## mulfok's Configs
 I enjoy using Obsidian in a particular way. Generally, I like to use lots of hotkeys, and forget about things I don't actively use.
 
 Obviously not everyone is like this, which is why Viridian does not treat this as "default" behaviour.

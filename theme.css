@@ -854,6 +854,12 @@ body {
   margin-inline: auto;
 }
 
+/* This is a personal preference, I may adjust this */
+.markdown-source-view.mod-cm6 .cm-scroller.cm-vimMode {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.9em;
+}
+
 /* -------------------------------------
             PLUGINS
 ------------------------------------- */
