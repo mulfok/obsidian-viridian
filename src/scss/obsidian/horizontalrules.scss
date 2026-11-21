@@ -1,5 +1,5 @@
 /* --- HORIZONTAL RULES --- */
-.markdown-rendered hr::after { // markdown-rendered required here
+:not(.community-modal-readme).markdown-rendered hr::after {
     content: var(--vr-horizontal-rule-symbol);
     display: inline-block;
 

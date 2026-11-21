@@ -59,6 +59,13 @@ settings:
 		default: True
 		addCommand: false
 	-
+		id: vr-hide-titlebar-buttons
+		title: Hide Titlebar Buttons
+		description: "Hides the minimise, maximise, and close buttons in the titlebar. (Obsidian frame only)"
+		type: class-toggle
+		default: False
+		addCommand: false
+	-
 		id: vr-scheme-font
 		title: "Font Scheme"
 		description: "The style of fonts used in the interface."

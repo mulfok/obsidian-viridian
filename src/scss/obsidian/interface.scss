@@ -15,5 +15,26 @@
 .view-header-title-container,
 .view-header-title-container::after,
 .view-header-title {
-    background: var(--background-primary);
+	background: var(--background-primary);
 }
+
+/* Borders & Outlines */
+// Stacked tabs
+.workspace-split.mod-vertical.mod-root {
+	// workspace leaf area
+	& .cm-scroller,
+	& .view-content .markdown-reading-view {
+		border-left: 1px solid var(--background-modifier-border);
+	}
+
+	// tab header
+	& .workspace-tab-header:not(:first-child) {
+		border-left: 1px solid var(--background-modifier-border);
+	}
+}
+
+/* Stacked tabs shadows */
+body {
+	--tab-stacked-shadow: none;
+}
+

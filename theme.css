@@ -373,7 +373,7 @@ body:not(.is-phone) .markdown-rendered blockquote {
 }
 
 /* --- HORIZONTAL RULES --- */
-.markdown-rendered hr::after {
+:not(.community-modal-readme).markdown-rendered hr::after {
   content: var(--vr-horizontal-rule-symbol);
   display: inline-block;
   position: absolute;
@@ -549,6 +549,27 @@ body:not(.is-phone) .nav-buttons-container {
 .view-header-title-container::after,
 .view-header-title {
   background: var(--background-primary);
+}
+
+/* Borders & Outlines */
+.workspace-split.mod-vertical.mod-root .cm-scroller, .workspace-split.mod-vertical.mod-root .view-content .markdown-reading-view {
+  border-left: 1px solid var(--background-modifier-border);
+}
+.workspace-split.mod-vertical.mod-root .workspace-tab-header:not(:first-child) {
+  border-left: 1px solid var(--background-modifier-border);
+}
+
+.titlebar {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.vr-hide-titlebar-buttons .titlebar-button.mod-minimize, .vr-hide-titlebar-buttons .titlebar-button.mod-maximize, .vr-hide-titlebar-buttons .titlebar-button.mod-close {
+  display: none;
+}
+
+/* Stacked tabs shadows */
+body {
+  --tab-stacked-shadow: none;
 }
 
 /* -------------------------------------
@@ -921,6 +942,13 @@ settings:
 		description: "Add labels to the navigation pane in the right sidebar."
 		type: class-toggle
 		default: True
+		addCommand: false
+	-
+		id: vr-hide-titlebar-buttons
+		title: Hide Titlebar Buttons
+		description: "Hides the minimise, maximise, and close buttons in the titlebar. (Obsidian frame only)"
+		type: class-toggle
+		default: False
 		addCommand: false
 	-
 		id: vr-scheme-font
