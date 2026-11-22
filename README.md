@@ -49,7 +49,9 @@ When I use Viridian, I like a *transparent window.* (See [Transparency](#transpa
 
 ![](/images/transparency.png)
 
-Viridian offers a _monospaced source mode,_ for those who prefer a plain text-editing experience. It pairs very well with Vim mode!
+Through [Style Manager](https://community.obsidian.md/plugins/style-manager), Viridian offers a _monospaced source mode,_ for those who prefer a plain text-editing experience.
+
+It pairs very well with Vim binds!
 
 ![](/images/monospace_source_mode.png)
 
