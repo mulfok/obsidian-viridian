@@ -151,6 +151,19 @@ body:not(.is-phone) .nav-buttons-container {
 }
 
 // Italicise folders in the file explorer
-.tree-item-self.nav-folder-title {
+.tree-item-inner.nav-folder-title-content {
 	font-style: italic;
 }
+
+// Padding for explorer
+.nav-files-container {
+	padding: var(--size-4-3);
+}
+
+// Add outlines to sidebar nav headers
+.mod-left-split, .mod-right-split {
+	.nav-header {
+		border-bottom: 1px solid var(--background-modifier-border);
+	}
+}
+

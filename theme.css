@@ -90,6 +90,7 @@ body {
   --accent-h: 145;
   --accent-s: 30%;
   --accent-l: 40%;
+  --vr-cm-font-size: 0.9rem;
 }
 
 .vr-serif {
@@ -200,6 +201,7 @@ body.vr-serif, body.vr-sans {
   --font-text-theme: var(--vr-font-body);
   --font-interface-theme: var(--vr-font-interface);
   --font-monospace-theme: var(--vr-font-monospace);
+  --inline-title-font: var(--vr-font-header);
 }
 
 /* Headers */
@@ -504,8 +506,16 @@ body:not(.is-phone) .nav-buttons-container {
   justify-content: right;
 }
 
-.tree-item-self.nav-folder-title {
+.tree-item-inner.nav-folder-title-content {
   font-style: italic;
+}
+
+.nav-files-container {
+  padding: var(--size-4-3);
+}
+
+.mod-left-split .nav-header, .mod-right-split .nav-header {
+  border-bottom: 1px solid var(--background-modifier-border);
 }
 
 /* --- STATUSBAR --- */
@@ -552,19 +562,11 @@ body:not(.is-phone) .nav-buttons-container {
 }
 
 /* Borders & Outlines */
-.workspace-split.mod-vertical.mod-root .cm-scroller, .workspace-split.mod-vertical.mod-root .view-content .markdown-reading-view {
+.workspace-split.mod-vertical.mod-root .cm-scroller, .workspace-split.mod-vertical.mod-root .view-content .markdown-reading-view, .workspace-split.mod-vertical.mod-root .empty-state {
   border-left: 1px solid var(--background-modifier-border);
 }
 .workspace-split.mod-vertical.mod-root .workspace-tab-header:not(:first-child) {
   border-left: 1px solid var(--background-modifier-border);
-}
-
-.titlebar {
-  border-bottom: 1px solid var(--background-modifier-border);
-}
-
-.vr-hide-titlebar-buttons .titlebar-button.mod-minimize, .vr-hide-titlebar-buttons .titlebar-button.mod-maximize, .vr-hide-titlebar-buttons .titlebar-button.mod-close {
-  display: none;
 }
 
 /* Stacked tabs shadows */
@@ -572,6 +574,19 @@ body {
   --tab-stacked-shadow: none;
 }
 
+.titlebar {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/*
+.vr-hide-titlebar-buttons .titlebar .titlebar-button {
+	&.mod-minimize,
+	&.mod-maximize,
+	&.mod-close {
+		display: none;
+	}
+}
+*/
 /* -------------------------------------
             FEATURES
 ------------------------------------- */
@@ -629,7 +644,35 @@ body {
   position: absolute;
   bottom: var(--vr-header-symbol-offset);
   right: 1%;
-  max-width: 1em;
+  max-height: 1em;
+  text-align: right;
+  z-index: -1;
+}
+
+/* Inline Titles */
+.inline-title:not([data-level]) {
+  --inline-title-weight: 800;
+  border-radius: var(--vr-border-radius);
+  padding-left: 2%;
+  padding-right: 2%;
+  position: relative;
+  overflow: hidden; /* This maaaaay be a little busted */
+  border: 2px solid color-mix(in oklch, var(--color-accent) 20%, transparent);
+  color: var(--color-accent);
+  z-index: 0;
+  letter-spacing: normal;
+  text-decoration: none !important;
+}
+.inline-title:not([data-level])::before {
+  content: "~/";
+  letter-spacing: -0.125em;
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 2em;
+  color: color-mix(in oklch, var(--color-accent) 20%, transparent);
+  position: absolute;
+  bottom: var(--vr-header-symbol-offset);
+  right: 1%;
   max-height: 1em;
   text-align: right;
   z-index: -1;
@@ -875,10 +918,23 @@ body {
   margin-inline: auto;
 }
 
-/* This is a personal preference, I may adjust this */
-.markdown-source-view.mod-cm6 .cm-scroller.cm-vimMode {
-  font-family: var(--font-monospace-theme);
-  font-size: 0.9em;
+/* Vim Edit Mode */
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .cm-line,
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .cm-formatting,
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-frontmatter,
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .cm-gutterElement,
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .HyperMD-header {
+  font-size: var(--vr-cm-font-size);
+  font-family: var(--font-monospace);
+  line-height: 1.5;
+}
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .HyperMD-list-line.cm-line {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller .HyperMD-codeblock-bg {
+  padding-left: 0;
+  background-color: var(--background-primary);
 }
 
 /* -------------------------------------
@@ -944,12 +1000,19 @@ settings:
 		default: True
 		addCommand: false
 	-
-		id: vr-hide-titlebar-buttons
-		title: Hide Titlebar Buttons
-		description: "Hides the minimise, maximise, and close buttons in the titlebar. (Obsidian frame only)"
+		id: vr-mono-source
+		title: Monospace Source Mode
+		description: "Use a monospace, monosized font for Source Mode. Useful for vim!"
 		type: class-toggle
-		default: False
-		addCommand: false
+		default: True
+		addCommand: true
+	-
+		id: vr-cm-font-size
+		title: Monospace Source Mode Font Size
+		description: "Font size for monospace source mode."
+		type: variable-text
+		default: 0.9rem
+		quotes: false
 	-
 		id: vr-scheme-font
 		title: "Font Scheme"

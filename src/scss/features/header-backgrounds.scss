@@ -40,10 +40,52 @@
         bottom: var(--vr-header-symbol-offset);
         right: 1%;
 
-        max-width: 1em;
+        // max-width: 1em;
         max-height: 1em;
         text-align: right;
 
         z-index: -1;
     }
 }
+
+/* Inline Titles */
+.inline-title:not([data-level]) {
+	--inline-title-weight: 800;
+
+	border-radius: var(--vr-border-radius);
+    padding-left: 2%;
+    padding-right: 2%;
+
+    position: relative; // Needed for symbols to show up
+    overflow: hidden; /* This maaaaay be a little busted */
+
+    border: 2px solid color-mix(in oklch, var(--color-accent) 20%, transparent);
+    
+    color: var(--color-accent);
+
+    z-index: 0;
+
+	letter-spacing: normal;
+	text-decoration: none !important;
+
+    &::before {
+        content: "~/";
+		letter-spacing: -0.125em;
+        
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 2em;
+        color: color-mix(in oklch, var(--color-accent) 20%, transparent);
+
+        position: absolute;
+        bottom: var(--vr-header-symbol-offset);
+        right: 1%;
+
+        // max-width: 1em;
+        max-height: 1em;
+        text-align: right;
+
+        z-index: -1;
+    }
+}
+

@@ -4,6 +4,8 @@ body.vr-serif, body.vr-sans {
 	--font-text-theme: var(--vr-font-body);
 	--font-interface-theme: var(--vr-font-interface);
 	--font-monospace-theme: var(--vr-font-monospace);
+
+	--inline-title-font: var(--vr-font-header);
 }
 
 /* Headers */
@@ -16,3 +18,4 @@ body.vr-serif, body.vr-sans {
 .el-h6 h6 { 
 	font-family: var(--vr-font-header);
 }
+

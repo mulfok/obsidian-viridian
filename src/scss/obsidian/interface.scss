@@ -23,7 +23,8 @@
 .workspace-split.mod-vertical.mod-root {
 	// workspace leaf area
 	& .cm-scroller,
-	& .view-content .markdown-reading-view {
+	& .view-content .markdown-reading-view,
+	& .empty-state {
 		border-left: 1px solid var(--background-modifier-border);
 	}
 
@@ -37,4 +38,5 @@
 body {
 	--tab-stacked-shadow: none;
 }
+
 

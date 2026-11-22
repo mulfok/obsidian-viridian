@@ -1,5 +1,26 @@
-/* This is a personal preference, I may adjust this */
-.markdown-source-view.mod-cm6 .cm-scroller.cm-vimMode {
-  font-family: var(--font-monospace-theme);
-  font-size: 0.9em;
+/* Vim Edit Mode */
+.vr-mono-source .markdown-source-view.mod-cm6 .cm-scroller {
+	// make all fonts, sizes, and line-heights the same sheesh
+	.cm-line,
+	.cm-formatting,
+	.cm-hmd-frontmatter,
+	.cm-gutterElement,
+	.HyperMD-header {
+		font-size: var(--vr-cm-font-size);
+		// font-family: var(--vr-font-monospace);
+		font-family: var(--font-monospace);
+		
+		line-height: 1.5;
+	}
+
+	// remove paddings
+	.HyperMD-list-line.cm-line {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.HyperMD-codeblock-bg {
+		padding-left: 0;
+		background-color: var(--background-primary);
+	}
 }

@@ -59,12 +59,19 @@ settings:
 		default: True
 		addCommand: false
 	-
-		id: vr-hide-titlebar-buttons
-		title: Hide Titlebar Buttons
-		description: "Hides the minimise, maximise, and close buttons in the titlebar. (Obsidian frame only)"
+		id: vr-mono-source
+		title: Monospace Source Mode
+		description: "Use a monospace, monosized font for Source Mode. Useful for vim!"
 		type: class-toggle
-		default: False
-		addCommand: false
+		default: True
+		addCommand: true
+	-
+		id: vr-cm-font-size
+		title: Monospace Source Mode Font Size
+		description: "Font size for monospace source mode."
+		type: variable-text
+		default: 0.9rem
+		quotes: false
 	-
 		id: vr-scheme-font
 		title: "Font Scheme"
