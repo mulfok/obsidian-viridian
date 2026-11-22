@@ -18,9 +18,9 @@ Viridian is an [Obsidian](https://obsidian.md) theme for a curated desktop exper
 - [Acknowledgements](#acknowledgements)
 
 ## Quickstart
-Viridian is meant to be a very non-intrusive theme by default. You can use it straight out of the box, and keep all your preferences from Obsidian (font family, accent colour, etc).
+Viridian is meant to be a very non-intrusive theme by default. You can use it straight out of the box, and keep all your preferences from Obsidian (font family, accent colour, etc.).
 
-Everything in this section is optional, but I recommend having a quick peek through anyways.
+Everything in this section is optional, but I recommend having a quick peek through anyway.
 1. Install helper plugins (Highly Recommended)
 	1. Install [Style Manager](https://community.obsidian.md/plugins/style-manager), exposes Viridian's full settings
 	2. Install [Hider](https://community.obsidian.md/plugins/obsidian-hider), allows you to elegantly hide certain Obsidian elements
@@ -49,13 +49,17 @@ When I use Viridian, I like a *transparent window.* (See [Transparency](#transpa
 
 ![](/images/transparency.png)
 
+Viridian offers a _monospaced source mode,_ for those who prefer a plain text-editing experience. It pairs very well with Vim mode!
+
+![](/images/monospace_source_mode.png)
+
 ## Design Goals
 Viridian's design goals have always been simple, in my head.
 
 This is what I want from Viridian:
 1. It needs to be **functional.** (no clutter!)
 2. It needs to be **pleasant to look at.** (fun!)
-3. It needs to be **nondestructive.** (keep things familiar!)
+3. It needs to be **non-destructive.** (keep things familiar!)
 
 ## mulfok's Configs
 I enjoy using Obsidian in a particular way. Generally, I like to use lots of hotkeys, and forget about things I don't actively use.
