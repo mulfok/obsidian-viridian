@@ -194,6 +194,27 @@ body {
   --background-modifier-form-field: #2e3440;
 }
 
+.vr-light-dawnfox.theme-light {
+  /* Text Colours */
+  --text-normal: #3e3218;
+  --text-muted: #8f857d;
+  --text-faint: #dacdc2;
+  --text-on-accent: #f8f4f0;
+  --text-on-accent-inverted: #3e3218;
+  /* Semantic Colours */
+  --background-primary: #f8f4f0;
+  --background-primary-alt: #e9e0d9;
+  --background-secondary: #e9e0d9;
+  --background-secondary-alt: #dacdc2;
+  --background-modifier-border: #aca096;
+  --background-modifier-error: #000000;
+  --background-modifier-error-rgb: rgb(0,0,0);
+  --background-modifier-error-hover: #000000;
+  --background-modifier-success: #c2d36880;
+  --background-modifier-message: #9e989280;
+  --background-modifier-form-field: #e3ded5;
+}
+
 /* -------------------------------------
             OBSIDIAN
 ------------------------------------- */
@@ -530,7 +551,7 @@ body:not(.is-phone) .nav-buttons-container {
   align-items: center;
   max-height: unset;
   height: 3em;
-  padding: 0px 2px;
+  padding: 0 0.75em;
 }
 
 .status-bar-item:not(:first-child):not(:nth-child(2)):not(.separator)::before {
@@ -557,21 +578,33 @@ body:not(.is-phone) .nav-buttons-container {
 .view-header,
 .view-header-title-container,
 .view-header-title-container::after,
-.view-header-title {
+.view-header-title,
+body:not(.is-mobile) .workspace-split.mod-primary-split .workspace-sidedock-vault-profile,
+.sidebar-toggle-button.mod-primary.mod-left,
+.mod-sidedock .workspace-tab-header-container,
+.workspace-leaf-content {
   background: var(--background-primary);
 }
 
 /* Borders & Outlines */
-.workspace-split.mod-vertical.mod-root .cm-scroller, .workspace-split.mod-vertical.mod-root .view-content .markdown-reading-view, .workspace-split.mod-vertical.mod-root .empty-state {
+.workspace-split.mod-vertical .mod-stacked .view-content:not(:first-child) {
   border-left: 1px solid var(--background-modifier-border);
 }
-.workspace-split.mod-vertical.mod-root .workspace-tab-header:not(:first-child) {
+.workspace-split.mod-vertical .mod-stacked .workspace-tab-header:not(:first-child) {
   border-left: 1px solid var(--background-modifier-border);
 }
 
 /* Stacked tabs shadows */
 body {
   --tab-stacked-shadow: none;
+}
+
+.view-header {
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.side-dock-ribbon .sidebar-toggle-button.mod-primary.mod-left {
+  border-right: 1px solid var(--background-modifier-border);
 }
 
 .titlebar {
@@ -661,7 +694,7 @@ body {
   color: var(--color-accent);
   z-index: 0;
   letter-spacing: normal;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 .inline-title:not([data-level])::before {
   content: "~/";
@@ -937,6 +970,16 @@ body {
   background-color: var(--background-primary);
 }
 
+.workspace-tab-header-container-inner {
+  margin-top: -1px;
+}
+.workspace-tab-header-container .workspace-tab-header {
+  border-radius: 0;
+}
+.workspace-tab-header-container .workspace-tab-header:after, .workspace-tab-header-container .workspace-tab-header:before {
+  display: none;
+}
+
 /* -------------------------------------
             PLUGINS
 ------------------------------------- */
@@ -955,6 +998,9 @@ settings:
 			-
 				label: "Default"
 				value: vr-colour-light-none
+			-
+				label: "Dawnfox"
+				value: vr-light-dawnfox
 	-
 		id: vr-scheme-dark
 		title: "Colour Scheme (Dark Mode)"

@@ -1,7 +1,16 @@
 /* --- SCROLLBARS --- */
-// Hide scrollbars haha
-// also probably don't use this
-.markdown-preview-view,
-.markdown-source-view.mod-cm6 .cm-scroller {
-	&::-webkit-scrollbar { display: none; }
+
+// Stacked tabs view
+.workspace-tab-container {
+	&::-webkit-scrollbar-thumb {
+		// border-top: 1px solid var(--background-modifier-border);
+		border-radius: 0px;
+	}
+}
+
+.mod-stacked ::-webkit-scrollbar-thumb, 
+.view-content ::-webkit-scrollbar-thumb {
+	background-color: red !important;
+	border-radius: 0 !important;
+	// padding: 0 !important;
 }

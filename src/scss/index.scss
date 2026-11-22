@@ -16,8 +16,11 @@
 ------------------------------------- */
 @use "colour-schemes/default-dark";
 @use "colour-schemes/default-light";
+
 @use "colour-schemes/dark-oled";
 @use "colour-schemes/dark-nord";
+
+@use "colour-schemes/light-dawnfox";
 
 /* -------------------------------------
             OBSIDIAN
@@ -33,6 +36,7 @@
 @use "obsidian/statusbar";
 @use "obsidian/interface";
 @use "obsidian/titlebar";
+// @use "obsidian/scrollbars";
 
 /* -------------------------------------
             FEATURES
@@ -44,6 +48,7 @@
 @use "features/clean-embed";
 @use "features/float";
 @use "features/monospace_source";
+@use "features/compact-tabs";
 
 /* -------------------------------------
             PLUGINS

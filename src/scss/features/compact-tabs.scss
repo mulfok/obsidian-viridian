@@ -1,0 +1,24 @@
+.workspace-tab-header-container {
+	// TODO: remove padding on left and right of non-stacked tab bars in a clean manner
+	// &:not(.mod-stacked) {
+	// 	padding-inline-start: 0;
+	// 	padding-inline-end:	0;
+	// }
+
+	&-inner {
+		// dumb hack to remove top border
+		// where is the selector for the actual border???
+		margin-top: -1px;
+	}
+
+	& .workspace-tab-header {
+		border-radius: 0;
+
+		&:after,
+		&:before {
+			// border-radius: 0;
+			display: none;
+		}
+	}
+}
+

@@ -14,21 +14,29 @@
 .view-header,
 .view-header-title-container,
 .view-header-title-container::after,
-.view-header-title {
+.view-header-title,
+body:not(.is-mobile) .workspace-split.mod-primary-split .workspace-sidedock-vault-profile,
+.sidebar-toggle-button.mod-primary.mod-left,
+.mod-sidedock .workspace-tab-header-container,
+.workspace-leaf-content { // might need to use [data-type="..."]???
 	background: var(--background-primary);
 }
 
 /* Borders & Outlines */
 // Stacked tabs
-.workspace-split.mod-vertical.mod-root {
+.workspace-split.mod-vertical .mod-stacked {
 	// workspace leaf area
-	& .cm-scroller,
-	& .view-content .markdown-reading-view,
-	& .empty-state {
+	& .view-content:not(:first-child) {
 		border-left: 1px solid var(--background-modifier-border);
 	}
 
 	// tab header
+	// don't know whether I prefer this on or off!
+	// .view-header {
+		// border-left: 1px solid var(--background-modifier-border);
+		// border-left: 1px solid red;
+	// }
+
 	& .workspace-tab-header:not(:first-child) {
 		border-left: 1px solid var(--background-modifier-border);
 	}
@@ -39,4 +47,13 @@ body {
 	--tab-stacked-shadow: none;
 }
 
+// Regular tabs
+.view-header {
+	border-bottom: 1px solid var(--background-modifier-border);
+	// border-left: 1px solid var(--background-modifier-border);
+}
 
+// Sidebar buttons (When ribbon visible)
+.side-dock-ribbon .sidebar-toggle-button.mod-primary.mod-left {
+	border-right: 1px solid var(--background-modifier-border);
+}

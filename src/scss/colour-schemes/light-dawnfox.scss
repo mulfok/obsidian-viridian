@@ -1,0 +1,45 @@
+// Refer to https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors
+.vr-light-dawnfox.theme-light {
+	/* Text Colours */
+    // Let obsidian handle certain colours for default theme
+	--text-normal: #3e3218;
+    
+    --text-muted: #8f857d;
+    --text-faint: #dacdc2;
+
+    --text-on-accent: #f8f4f0; // light font colour
+	--text-on-accent-inverted: #3e3218; // dark font colour
+    
+    //--text-success:
+    //--text-warning:
+    //--text-error: #b45252;
+    
+    // --text-accent
+    // --text-accent-hover
+
+	//--text-highlight-bg
+    //--text-selection
+
+    /* Semantic Colours */
+    --background-primary: #f8f4f0;
+    --background-primary-alt: #e9e0d9;
+
+    --background-secondary: #e9e0d9;
+    --background-secondary-alt: #dacdc2;
+
+    // --background-modifier-hover
+    // --background-modifier-active-hover
+    --background-modifier-border: #aca096;
+    //--background-modifier-border-hover
+    //--background-modifier-border-focus
+
+    --background-modifier-error: #000000;
+    --background-modifier-error-rgb: rgb(0,0,0);
+    --background-modifier-error-hover: #000000;
+
+    --background-modifier-success: #c2d36880;
+
+    --background-modifier-message: #9e989280;
+    --background-modifier-form-field: #e3ded5;
+}
+
