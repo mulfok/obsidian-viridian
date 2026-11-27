@@ -42,6 +42,13 @@ body:not(.is-mobile) .workspace-split.mod-primary-split .workspace-sidedock-vaul
 	}
 }
 
+.workspace-split.mod-vertical .mod-stacked .workspace-tab-header.tappable {
+	max-width: 2em;
+}
+body > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-container .view-header {
+	max-height: 2em;
+}
+
 /* Stacked tabs shadows */
 body {
 	--tab-stacked-shadow: none;
